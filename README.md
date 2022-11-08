@@ -2,6 +2,7 @@
 ================================
 
 原 Github 项目[链接](https://github.com/uwsampa/research-group-web)
+
 使用的 [License](https://creativecommons.org/licenses/by-nc/4.0/)
 
 ## 文件结构
@@ -42,6 +43,7 @@ gem install jekyll
 2. 编辑各项内容，添加信息
     * 编辑 _config.yml，布置板块
     * 编辑 _data/people.yml，添加成员信息
+    * 编辑 index.html，完善主页信息
     * 编辑 _projects/xxx.md，添加组内项目
     * 编辑 bib/pubs.bib，整理组内发表文章的 bibtex 文件
     * 编辑 _posts/xxx.md，整理关于组内的新闻、大事
@@ -55,4 +57,14 @@ make serve
 ```
     
 4. 检查并提交生成完的网页
+
+## 待办事项
+1. 密码组 LOGO
+2. 密码组简介（一小段话，放在主页，得 nb 点）
+3. 组内成员信息（姓名、别称、靓照）
+4. 各个项目的内容撰写（markdown 文件）
+5. 往年发表的工作整理成 bibtex 文档（记得添加月份）
+6. 大事/新闻材料整理（markdown 文件）
+7. 招生/工页面的信息填写（markdown 文件）
+8. 个人主页模板
 
