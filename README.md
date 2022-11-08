@@ -1,8 +1,8 @@
-# 量子密码组网页配置指南
+# 网页配置指南
 ================================
 
-原 Github 项目[链接][https://github.com/uwsampa/research-group-web]
-使用的 [License][https://creativecommons.org/licenses/by-nc/4.0/]
+原 Github 项目[链接](https://github.com/uwsampa/research-group-web)
+使用的 [License](https://creativecommons.org/licenses/by-nc/4.0/)
 
 ## 文件结构
 -------------------
@@ -34,9 +34,11 @@
 ## 配置流程
 ---------------------
 1. 安装编译工具
-    * > pip install bibble
-    * > gem install jekyll
-    
+```
+pip install bibble
+gem install jekyll
+```
+
 2. 编辑各项内容，添加信息
     * 编辑 _config.yml，布置板块
     * 编辑 _data/people.yml，添加成员信息
@@ -47,8 +49,10 @@
     * 添加图片至 img 文件夹内
     
 3. 编译生成网页
-    * > make 
-    * > make serve
+```
+make 
+make serve
+```
     
 4. 检查并提交生成完的网页
 
