@@ -10,20 +10,62 @@ layout: personal_page_default
             </div>
 
             <p>
-            <h1>{{ page.title }}</h1>
+            <h3>{{ page.name }}（{{ page.position }}）</h3>
             </p>
 
+            {% if page.titles %}
             <p>
-            <h4>{{ page.subtitle }}</h4>
+            <h5>{{ page.titles }}</h5>
             </p>
+            {% endif %}
 
+            {% if page.tutor %}
             <p>
-            电话：{{ page.tel }}<br>
+            <h5>{{ page.tutor }}</h5>
             </p>
+            {% endif %}
 
+            {% if page.discipline %}
             <p>
-           邮箱：{{ page.email }}
+            学科：{{ page.discipline }}<br>
             </p>
+            {% endif %}
+
+            {% if page.education %}
+            <p>
+            学历：{{ page.education }}<br>
+            </p>
+            {% endif %}
+
+            {% if page.degree %}
+            <p>
+            学位：{{ page.degree }}<br>
+            </p>
+            {% endif %}
+
+            {% if page.graduateFrom %}
+            <p>
+            毕业院校：{{ page.graduateFrom }}<br>
+            </p>
+            {% endif %}
+
+            {% if page.office %}
+            <p>
+            办公地点：{{ page.office }}<br>
+            </p>
+            {% endif %}
+
+            {% if page.phone %}
+            <p>
+            联系方式：{{ page.phone }}<br>
+            </p>
+            {% endif %}
+
+            {% if page.email %}
+            <p>
+            邮箱：{{ page.email }}
+            </p>
+            {% endif %}
 
         </div>
 
