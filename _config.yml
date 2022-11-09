@@ -12,17 +12,13 @@ permalink: /blog/:year/:month/:day/:title.html
 # Sections on the "people" page.
 roles:
   - key: faculty
-    name: 教师团队
-  - key: staff
-    name: 在职员工
+    name: 教师
   - key: postdoc
-    name: 博后团队
+    name: 博后
   - key: grad
     name: 研究生
   - key: ugrad
     name: 本科生
-  - key: ugrad-alum
-    name: 曾经干过活的本科生
   - key: collab
     name: 合作者
   - key: alum
@@ -45,7 +41,7 @@ collections:
 navigation:
   - title: 主页
     link: /
-  - title: 组内成员
+  - title: 团队成员
     link: /#people
   - title: 研究项目
     link: /research.html

@@ -27,7 +27,7 @@ role-tables:
 </div>
 <img src="/img/会议2019芜湖量子密码会.JPG" width=100%>
 <section>
-    <h2>News</h2>
+    <h2>新闻</h2>
     <ul class="news list-unstyled">
         {% for post in site.posts limit: site.front_page_news %}
             {% include news-item.html item=post %}
@@ -43,7 +43,7 @@ role-tables:
 </section>
 
 <section>
-    <h2>Research</h2>
+    <h2>研究项目</h2>
     <div class="card-columns">
         {% comment %}
         Sort the projects by date, putting those without dates last
@@ -59,7 +59,7 @@ role-tables:
 </section>
 
 <div id="people">
-    <h2>People</h2>
+    <h2>团队成员</h2>
     {% for role-table in page.role-tables %}
         <section class="people row justify-content-between">
             {% for role-column in role-table %}

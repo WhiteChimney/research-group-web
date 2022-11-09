@@ -64,7 +64,9 @@ make serve
 2. 密码组简介（一小段话，放在主页，得文采好一点）
 3. 组内成员信息（姓名、别称、靓照）
 4. 各个项目的内容撰写（_projects/xxx.md）
-5. 往年发表的工作整理成 bibtex 文档（记得添加月份）
+5. 往年发表的工作整理成 bibtex 文档
+    1. 添加月份
+    2. 添加 pdf 文件至目录 bib/pdf/xxx.pdf，并在 bib 中加入项 url={/bib/pdf/xxx.pdf}，注意行末不要少逗号
 6. 大事/新闻材料整理（_posts/xxx.md）
 7. 招生/工页面的信息填写（joinus.md）
 8. 个人主页编写

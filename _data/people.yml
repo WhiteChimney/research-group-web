@@ -1,165 +1,104 @@
-prof_shuangwang:
+faculty_hanzhengfu:
+    display_name: "韩正甫"
+    role: faculty
+    image: /img/people/faculty_hanzhengfu.jpg
+    bio: 教授
+    webpage: "http://qkdlab.gaokeyan.xyz/people/faculty_hanzhengfu.html"
+
+faculty_chenwei:
+    display_name: "陈巍"
+    role: faculty
+    image: /img/people/faculty_chenwei.jpg
+    bio: 研究员
+    webpage: "http://qkdlab.gaokeyan.xyz/people/faculty_chenwei.html"
+
+faculty_wangshuang:
     display_name: "王双"
     role: faculty
-    image: /img/people/prof-x.jpg
-
-prof-a:
-    display_name: "Prof A"
-    role: faculty
-
-prof-b:
-    display_name: "Prof B"
-    role: faculty
-
-prof-c:
-    display_name: "Prof C"
-    role: faculty
-
-profx:
-    display_name: "Professor X"
+    image: /img/people/faculty_wangshuang.jpg
+    bio: 教授
     webpage: "http://qkdlab.gaokeyan.xyz/people/professor_x.html"
-    github: profx
+
+faculty_yinzhenqiang:
+    display_name: "银振强"
     role: faculty
-    image: /img/people/prof-x.jpg
-    bio: Professor
+    image: /img/people/faculty_yinzhenqiang.jpg
+    bio: 教授
+    webpage: "http://qkdlab.gaokeyan.xyz/people/faculty_yinzhenqiang.html"
 
-scott:
-    display_name: "Scott Summers"
-    webpage: "http://en.wikipedia.org/wiki/Cyclops_(comics)"
-    role: staff
-    image: /img/people/scott.png
-    bio: aka Cyclops
+faculty_hedeyong:
+    display_name: "何德勇"
+    role: faculty
+    image: /img/people/faculty_hedeyong.jpg
+    bio: 教授
+    webpage: "http://qkdlab.gaokeyan.xyz/people/faculty_hedeyong.html"
 
-wolverine:
-    display_name: "Wolverine"
-    webpage: "http://en.wikipedia.org/wiki/Wolverine_%28comics%29"
-    github: wolverine
+faculty_zhouzheng:
+    display_name: "周政"
+    role: faculty
+    image: /img/people/faculty_zhouzheng.jpg
+    bio: 教授
+    webpage: "http://qkdlab.gaokeyan.xyz/people/faculty_zhouzheng.html"
+
+postdoc_fanyuanguanjie:
+    display_name: "范元冠杰"
     role: postdoc
+    image: /img/people/postdoc_fanyuanguanjie.jpg
+    bio: 
+    webpage: "http://qkdlab.gaokeyan.xyz/people/postdoc_fanyuanguanjie.html"
 
-storm:
-    display_name: "Storm"
-    webpage: "http://en.wikipedia.org/wiki/Storm_%28Marvel_Comics%29"
+postdoc_wangfangxiang:
+    display_name: "王纺翔"
+    role: postdoc
+    image: /img/people/postdoc_wangfangxiang.jpg
+    bio: 
+    webpage: "http://qkdlab.gaokeyan.xyz/people/postdoc_wangfangxiang.html"
+
+postdoc_lufengyu:
+    display_name: "卢奉宇"
+    role: postdoc
+    image: /img/people/postdoc_lufengyu.jpg
+    bio: 
+    webpage: "http://qkdlab.gaokeyan.xyz/people/postdoc_lufengyu.html"
+
+postdoc_zhangguowei:
+    display_name: "张国威"
+    role: postdoc
+    image: /img/people/postdoc_zhangguowei.jpg
+    bio: 
+    webpage: "http://qkdlab.gaokeyan.xyz/people/postdoc_zhangguowei.html"
+
+postdoc_fanyuanguanjie:
+    display_name: "范元冠杰"
+    role: postdoc
+    image: /img/people/postdoc_fanyuanguanjie.jpg
+    bio: 
+    webpage: "http://qkdlab.gaokeyan.xyz/people/postdoc_fanyuanguanjie.html"
+
+grad_luqihang:
+    display_name: "卢启航"
     role: grad
-    image: /img/people/storm.png
+    image: /img/people/grad_luqihang.jpg
+    bio: 研究生
+    webpage: "http://qkdlab.gaokeyan.xyz/people/grad_luqihang.html"
 
-grad-a:
-    display_name: "Grad A"
-    role: grad
-
-grad-b:
-    display_name: "Graduate Student B With Long Name"
-    role: grad
-
-grad-c:
-    display_name: "Grad C"
-    role: grad
-
-grad-d:
-    display_name: "Grad D"
-    role: grad
-
-grad-e:
-    display_name: "Grad E"
-    role: grad
-
-grad-f:
-    display_name: "Grad F"
-    role: grad
-
-grad-g:
-    display_name: "Grad G"
-    role: grad
-
-grad-h:
-    display_name: "Grad H"
-    role: grad
-
-grad-i:
-    display_name: "Grad I"
-    role: grad
-
-alum-a:
-    display_name: "Alum A"
-    role: alum
-    bio: "Ph.D., 2013. Now at Microsoft Research."
-
-alum-b:
-    display_name: "Alum B With Way Longer Name"
-    role: alum
-
-alum-c:
-    display_name: "Alum C"
-    role: alum
-    webpage: "https://www.google.com"
-
-alum-d:
-    display_name: "Alum D"
-    role: alum
-
-alum-e:
-    display_name: "Alum E"
-    role: alum
-
-alum-f:
-    display_name: "Alum F"
-    role: alum
-
-alum-g:
-    display_name: "Alum G"
-    role: alum
-
-alum-h:
-    display_name: "Alum H"
-    role: alum
-
-alum-i:
-    display_name: "Alum I"
-    role: alum
-
-collab-a:
-    display_name: "Collaborator A"
-    role: collab
-
-collab-b:
-    display_name: "Collaborator B With Long Name"
-    role: collab
-
-collab-c:
-    display_name: "Collaborator C"
-    role: collab
-
-collab-d:
-    display_name: "Collaborator D"
-    role: collab
-
-collab-e:
-    display_name: "Collaborator E"
-    role: collab
-
-ugrad-a:
-    display_name: "Ugrad A"
+ugrad_xxx:
+    display_name: "某本科同学"
     role: ugrad
+    image: /img/people/ugrad_xxx.jpg
+    bio: 本科生
+    webpage: "http://qkdlab.gaokeyan.xyz/people/ugrad_xxx.html"
 
-ugrad-b:
-    display_name: "Ugrad Student B With Long Name"
-    role: ugrad
+collab_xxx:
+    display_name: "某合作者"
+    role: collab
+    image: /img/people/collab_xxx.jpg
+    bio: 
+    webpage: "http://qkdlab.gaokeyan.xyz/people/collab_xxx.html"
 
-ugrad-c:
-    display_name: "Ugrad C"
-    role: ugrad
-
-ugrad-d:
-    display_name: "Ugrad D"
-    role: ugrad
-
-ugrad-e:
-    display_name: "Ugrad E"
-    role: ugrad
-
-ugrad-alum-a:
-    display_name: "Past Ugrad A"
-    role: ugrad-alum
-
-ugrad-alum-b:
-    display_name: "Past Ugrad Student B With Long Name"
-    role: ugrad-alum
+alum_xxx:
+    display_name: "某毕业生"
+    role: alum
+    image: /img/people/alum_xxx.jpg
+    bio: 大师兄/姐
+    webpage: "http://qkdlab.gaokeyan.xyz/people/alum_xxx.html"
