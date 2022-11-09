@@ -7,7 +7,7 @@ email: wshuang@ustc.edu.cn
 description: |
   个人简介
 
-image: /img/people/prof-x.jpg
+image: /img/people/faculty_wangshuang.jpg
 
 layout: personal_page_template_1
 ---

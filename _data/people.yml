@@ -17,7 +17,7 @@ faculty_wangshuang:
     role: faculty
     image: /img/people/faculty_wangshuang.jpg
     bio: 教授
-    webpage: "http://qkdlab.gaokeyan.xyz/people/professor_x.html"
+    webpage: "http://qkdlab.gaokeyan.xyz/people/faculty_wangshuang.html"
 
 faculty_yinzhenqiang:
     display_name: "银振强"
@@ -37,7 +37,7 @@ faculty_zhouzheng:
     display_name: "周政"
     role: faculty
     image: /img/people/faculty_zhouzheng.jpg
-    bio: 教授
+    bio: 
     webpage: "http://qkdlab.gaokeyan.xyz/people/faculty_zhouzheng.html"
 
 postdoc_fanyuanguanjie:
@@ -79,8 +79,76 @@ grad_luqihang:
     display_name: "卢启航"
     role: grad
     image: /img/people/grad_luqihang.jpg
-    bio: 研究生
     webpage: "http://qkdlab.gaokeyan.xyz/people/grad_luqihang.html"
+
+grad_yepeng:
+    display_name: "叶鹏"
+    role: grad
+    image: /img/people/grad_yepeng.jpg
+    webpage: "http://qkdlab.gaokeyan.xyz/people/grad_yepeng.html"
+
+grad_wangruiqiang:
+    display_name: "王瑞强"
+    role: grad
+    image: /img/people/grad_wangruiqiang.jpg
+    webpage: "http://qkdlab.gaokeyan.xyz/people/grad_wangruiqiang.html"
+
+grad_zhongzhenqiu:
+    display_name: "仲振秋"
+    role: grad
+    image: /img/people/grad_zhongzhenqiu.jpg
+    webpage: "http://qkdlab.gaokeyan.xyz/people/grad_zhongzhenqiu.html"
+
+grad_haungguanzhong:
+    display_name: "黄冠中"
+    role: grad
+    image: /img/people/grad_haungguanzhong.jpg
+    webpage: "http://qkdlab.gaokeyan.xyz/people/grad_haungguanzhong.html"
+
+grad_tengjun:
+    display_name: "滕俊"
+    role: grad
+    image: /img/people/grad_tengjun.jpg
+    webpage: "http://qkdlab.gaokeyan.xyz/people/grad_tengjun.html"
+
+grad_zhenxuetao:
+    display_name: "郑学涛"
+    role: grad
+    image: /img/people/grad_zhenxuetao.jpg
+    webpage: "http://qkdlab.gaokeyan.xyz/people/grad_zhenxuetao.html"
+
+grad_wangzehao:
+    display_name: "王泽浩"
+    role: grad
+    image: /img/people/grad_wangzehao.jpg
+    webpage: "http://qkdlab.gaokeyan.xyz/people/grad_wangzehao.html"
+
+grad_chenjialin_21:
+    display_name: "陈佳林"
+    role: grad
+    image: /img/people/grad_chenjialin_21.jpg
+    webpage: "http://qkdlab.gaokeyan.xyz/people/grad_chenjialin_21.html"
+
+grad_kangxiang:
+    display_name: "康翔"
+    role: grad
+    image: /img/people/grad_kangxiang.jpg
+    webpage: "http://qkdlab.gaokeyan.xyz/people/grad_kangxiang.html"
+
+
+grad_zhouyao:
+    display_name: "周姚"
+    role: grad
+    image: /img/people/grad_zhouyao.jpg
+    webpage: "http://qkdlab.gaokeyan.xyz/people/grad_zhouyao.html"
+
+
+grad_zhanxiaohai:
+    display_name: "展啸海"
+    role: grad
+    image: /img/people/grad_zhanxiaohai.jpg
+    webpage: "http://qkdlab.gaokeyan.xyz/people/grad_zhanxiaohai.html"
+
 
 ugrad_xxx:
     display_name: "某本科同学"
@@ -93,7 +161,7 @@ collab_xxx:
     display_name: "某合作者"
     role: collab
     image: /img/people/collab_xxx.jpg
-    bio: 
+    bio: 合作者
     webpage: "http://qkdlab.gaokeyan.xyz/people/collab_xxx.html"
 
 alum_xxx:
