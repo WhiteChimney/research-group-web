@@ -38,6 +38,8 @@ base: ''
 collections:
   projects:
     output: true
+  people:
+    output: true
 
 # Navigation bar links.
 navigation:

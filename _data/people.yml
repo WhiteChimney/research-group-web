@@ -17,7 +17,7 @@ prof-c:
 
 profx:
     display_name: "Professor X"
-    webpage: "http://en.wikipedia.org/wiki/Professor_X"
+    webpage: "http://qkdlab.gaokeyan.xyz/people/professor_x.html"
     github: profx
     role: faculty
     image: /img/people/prof-x.jpg
