@@ -16,6 +16,7 @@
     * _posts/xxx.md: 主页新闻的配置文件
     * _projects/xxx.md: 研究项目板块的配置文件
     * bib/pubs.bib: 发表工作的 bibtex 文件，publications.tmpl 为临时文件，不用管
+    * bib/pdf: 用于存放对应的文献 pdf
     * img/xxx: 用于存放图片文件
     * others.md: 自定义更多页面的配置文件
     
@@ -35,31 +36,99 @@
     
 ## 配置流程
 ---------------------
-1. 安装编译工具
+
+### 编辑个人网页
+编辑 _people/xxx.md 文件，并将所用到的资源文件（如图片）一起提交给管理员处理即可。
+具体编辑步骤可以参看这个[网页](https://qkdlab.gaokeyan.xyz/people/faculty_example.html)。
+
+### 编辑研究项目页面
+添加并编辑 _projects/xxx.md 文件，并将所用到的资源文件（如图片）一起提交给管理员处理即可。
+语法可参照上面提到的链接。
+可选变量：
+```
+title: 主标题      // 主标题
+notitle: true     // 可根据需求设置显示或不显示主标题
+subtitle: 副标题   // 副标题
+description: |
+    这是一个示例项目 // 放在标题下的简短介绍
+image: "/img/projects/xxx.png" // 标题配图
+
+people:                   // 项目参与人员
+  - faculty_hanzhengfu
+  - faculty_chenwei
+
+status: inactive  // 项目状态，设置为 "inactive" 时仅在“研究项目“板块出现，
+                  // 而不在首页出现，用于比较简短或久远的项目
+link: "http://lqcc.ustc.edu.cn" // 配合 "status:inactive" 可设置点击标题的跳转链接
+no-link: false    // 是否启用链接
+
+layout: project           // 使用的模板为 "project"
+last-updated: 2022-01-17  // 更新时间
+```
+
+### 编辑新闻（大事纪）页面
+添加并编辑 _posts/yyyy-mm-dd-xxx.md，命令格式必须如此。
+可选变量：
+```
+layout: post        // 模板选择为 "post"
+title: "标题"        // 标题
+shortnews: true     // "shortnews" 为 "true" 时主页上不显示详情链接
+icon: newspaper-o   // 新闻前的小图标，"font awesome" 定义的图标包（类似表情包）
+image: /img/posts/xxx.png             // 标题配图路径
+image_style: "max-height: 100px;"     // 图片样式
+image_link: "http://lqcc.ustc.edu.cn" // 点击图片跳转的链接
+```
+
+### 编辑发表的工作页面
+1. 获取原始 bibtex
+2. 添加月份信息（必须，否则会报错），如
+```
+month={2},
+```
+3. 添加 pdf 文件路径
+```
+url={/bib/pdf/xxx.pdf},
+```
+4. 检查以上条目结尾是否缺少逗号
+5. 提交给管理员即可
+
+### 管理员网站配置
+1. 使用组内服务器（server.gaokeyan.xyz)，环境已经配置好。（推荐使用 VS Code，安装 ssh 插件）
+
+2. 或者在自己的电脑上安装编译工具
 ```
 pip install bibble
 gem install jekyll
 ```
+* 注：macOS 下由于自带 Ruby 环境，安装最为方便。Linux 下可能需要手动安装 Ruby 及其开发环境。Windows 下由于缺少 make 工具，需要更多折腾。
 
-2. 编辑各项内容，添加信息
-    * 编辑 _config.yml，布置板块
-    * 编辑 _data/people.yml，添加成员信息
-    * 编辑 index.html，完善主页信息
-    * 编辑 _projects/xxx.md，添加组内项目
-    * 编辑 bib/pubs.bib，整理组内发表文章的 bibtex 文件
-    * 编辑 _posts/xxx.md，整理关于组内的新闻、大事
-    * 修改 code.md，配置对应的 layout，添加自定义页面
-    * 添加图片至 img 文件夹内
-    
-3. 编译生成网页
+3. 整理各项内容
+    * _config.yml，板块布置
+    * _data/people.yml，成员信息
+    * index.html，主页信息
+    * _projects/xxx.md，组内项目
+    * bib/pubs.bib，组内发表文章的 bibtex 文件
+    * _posts/xxx.md，关于组内的新闻、大事
+    * others.md，添加自定义页面
+    * 以上步骤中，添加图片至 img 文件夹内（或其他对应的文件夹）
+
+4. 编译生成网页
 ```
-make 
+cd research-group-web
+make
+```
+
+5. 挂载生成的网页至本机/服务器上
+```
 make serve
 ```
-    
-4. 检查并提交生成完的网页
+
+6. 用浏览器打开 makefile 文件中配置的网页地址（`SERVER_HOST:SERVER_PORT`，e.g. `127.0.0.1:5000`），查看效果
+
+7. 将生成的网页（上级目录中 qkdlab_website 文件夹）打包，即已完成
 
 ## 待办事项
+-------
 1. 密码组 LOGO
 2. 密码组简介（一小段话，放在主页，得文采好一点）
 3. 组内成员信息（姓名、别称、靓照）
