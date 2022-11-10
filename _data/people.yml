@@ -1,6 +1,7 @@
 faculty_example:
     display_name: "示例教师"
     role: faculty
+    bib_name: "Lo, Hoi-Kwong"
     image: /img/people/faculty_example/faculty_example.png
     bio: 
     webpage: "http://qkdlab.gaokeyan.xyz/people/faculty_example.html"
