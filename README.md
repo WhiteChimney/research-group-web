@@ -92,6 +92,9 @@ url={/bib/pdf/xxx.pdf},
 4. 检查以上条目结尾是否缺少逗号
 5. 提交给管理员即可
 
+### 编辑其他页面
+可选用不同的 layout，参考上述板块进行自定义配置。或者直接用网页编辑软件进行编辑，生成 html 后让管理员链接一下即可。
+
 ### 管理员网站配置
 1. 使用组内服务器（server.gaokeyan.xyz)，环境已经配置好。（推荐使用 VS Code，安装 ssh 插件）
 
@@ -133,10 +136,8 @@ make serve
 2. 密码组简介（一小段话，放在主页，得文采好一点）
 3. 组内成员信息（姓名、别称、靓照）
 4. 各个项目的内容撰写（_projects/xxx.md）
-5. 往年发表的工作整理成 bibtex 文档
-    1. 添加月份
-    2. 添加 pdf 文件至目录 bib/pdf/xxx.pdf，并在 bib 中加入项 url={/bib/pdf/xxx.pdf}，注意行末不要少逗号
-6. 大事/新闻材料整理（_posts/xxx.md）
+5. 大事/新闻材料整理（_posts/xxx.md）
+6. 往年发表的工作整理成 bibtex 文档
 7. 招生/工页面的信息填写（joinus.md）
 8. 个人主页编写
     1. 修改模板文件：_layouts/personal_page_template_N.html
