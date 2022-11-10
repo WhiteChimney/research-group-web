@@ -14,7 +14,7 @@ build: _includes/pubs.html
 
 # you can configure these at the shell, e.g.:
 # SERVE_PORT=5001 make serve
-SERVE_HOST ?= 127.0.0.1
+SERVE_HOST ?= server.gaokeyan.xyz
 SERVE_PORT ?= 5000
 
 serve: _includes/pubs.html
