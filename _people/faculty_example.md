@@ -1,6 +1,7 @@
 ---
 name: 张三
-tutor: 教授、博导
+position: 教授
+tutor: 博导
 phone: 010-66260702
 email: zhangsan@ustc.edu.cn
 
@@ -22,19 +23,19 @@ layout: personal_page_template_1
 
 ## 文件结构
 --------------
-文件结构很简单，分为上下两部分。第一部分为标准数据，快速填写个人基本信息。第二部分从 `layout` 那一行代码往下开始，即为正文。如下图所示。`description` 为本文档的注释，不影响显示内容。`image` 为头像照片路径，文档提交后统一处理。`layout` 那一行代码用于选择网页模板，目前暂时只有一个模板，遂不可更改。
+文件结构很简单，分为上下两部分。第一部分为标准数据，快速填写个人基本信息。第二部分从 `layout` 那一行代码往下开始，即为正文。如下图所示。`image` 为头像照片路径，文档提交后统一处理。`layout` 那一行代码用于选择网页模板，目前暂时只有一个模板，遂不可更改。
 
 <div style="text-align:center">
-    <img src="/img/people/faculty_example/文件结构.png" title="文件结构" width="50%"/>
+    <img src="/img/people/faculty_example/文件结构.png" title="文件结构" width="100%"/>
 </div>
 
 
 ## 关于修改
 ---------------
-如果不想太多了解语法，可以直接下载[模板文件](http://qkdlab.gaokeyan.xyz/img/people/faculty_example/faculty_template.md)修改即可，图片等资源文件交给管理员统一处理。效果如下图所示。
+如果不想太多了解语法，可以直接下载[模板文件](http://qkdlab.gaokeyan.xyz/files/faculty_template.zip)修改即可，图片等资源文件交给管理员统一处理。效果如下图所示，左图为编辑文本，右图为显示效果。
 <div style="text-align:center">
-    <img src="/img/people/faculty_example/模板编辑效果.png" title="模板编辑效果" width="25%"/>
-    <img src="/img/people/faculty_example/模板网页效果.png" title="模板网页效果" width="65%"/>
+    <img src="/img/people/faculty_example/模板编辑效果.png" title="模板编辑效果" width="39%"/>
+    <img src="/img/people/faculty_example/模板网页效果.png" title="模板网页效果" width="60%"/>
 </div>
 
 ## *Markdown* 语法

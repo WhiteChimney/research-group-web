@@ -3,7 +3,9 @@
 
 原 Github 项目[链接](https://github.com/uwsampa/research-group-web)
 
-使用的 [License](https://creativecommons.org/licenses/by-nc/4.0/)
+Fork 过来的[Gitee 仓库](https://gitee.com/white8chimney/research-group-web)
+
+使用的 License 为 [Creative Commons Attribution-NonCommercial 4.0 International License](https://creativecommons.org/licenses/by-nc/4.0/)
 
 ## 文件结构
 -------------------
