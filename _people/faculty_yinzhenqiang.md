@@ -12,6 +12,7 @@ phone: 0551-63607342
 email: yinzq@ustc.edu.cn
 
 image: /img/people/faculty_yinzhenqiang/faculty_yinzhenqiang.png
+bib: faculty_yinzhenqiang.bib
 
 layout: personal_page_template_1
 ---

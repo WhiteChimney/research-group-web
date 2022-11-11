@@ -12,6 +12,7 @@ phone: 0551-63607342
 email: zfhan@ustc.edu.cn
 
 image: /img/people/faculty_hanzhengfu/faculty_hanzhengfu.png
+bib: faculty_hanzhengfu.bib
 
 layout: personal_page_template_1
 ---

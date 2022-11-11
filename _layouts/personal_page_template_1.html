@@ -71,10 +71,13 @@ layout: personal_page_default
 
         <div class="col-md-9">
             			
-			     {{ content }}
+			    {{ content }}
 
-                 {% include personal_bib/faculty_example.bib.md %}
-
+                {% if page.bib %}
+                <p>
+                    {% include personal_bib_autogen/{{page.bib}}.html %}
+                </p>
+                {% endif %}
         </div>
 
  </div>
