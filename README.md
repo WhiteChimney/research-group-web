@@ -17,12 +17,12 @@ Fork 过来的[Gitee 仓库](https://gitee.com/white8chimney/research-group-web)
     * _people/xxx.md: 个人主页的配置文件
     * _posts/xxx.md: 主页新闻的配置文件
     * _projects/xxx.md: 研究项目板块的配置文件
-    * bib/pubs.bib: 发表工作的 bibtex 文件，publications.tmpl 为临时文件，不用管
+    * bib/pubs_original.bib: 发表工作的 bibtex 文件，其余为临时文件，不用管
     * bib/pdf: 用于存放对应的文献 pdf
     * img/xxx: 用于存放图片文件
     * others.md: 自定义更多页面的配置文件
     
-* 网页文件（本地生成的）
+* 网页文件
     * blog.html
     * css
     * img
@@ -82,9 +82,8 @@ image_link: "http://lqcc.ustc.edu.cn" // 点击图片跳转的链接
 ```
 
 ### 编辑发表的工作页面
-1. 获取原始 bibtex
-2. 将 year 条目的关键词 "year" 改为 "realyear"
-3. 添加新的 year 与 month 条目用于排序（因为编译器是按照时间顺序排列的，无法修改）
+1. 获取原始 bibtex，并按需求从上到下排序
+2. 将编辑好的文件命名为 "pubs_original.bib"，上传至 bib/ 目录下
 3. 添加 pdf 文件路径（如果需要附上 pdf）
 ```
 url={/bib/pdf/xxx.pdf},

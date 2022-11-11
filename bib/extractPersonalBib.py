@@ -118,8 +118,9 @@ line = fOrigBib.readline()
 
 while (line):
     if (line[0] == "@"):
-        origBib.append(tempBib)
-        tempBib = ''
+        if (tempBib != ''):
+            origBib.append(tempBib)
+            tempBib = ''
     tempBib += line
     line = fOrigBib.readline()
 origBib.append(tempBib)
@@ -128,10 +129,10 @@ fOrigBib.close()
 
 # 将原始 bib 文件排序，用以在网页以定序显示
 fOrderedBib = open(ordered_bib_fileName, 'w')
-index = 0
+index = 10000
 for bib in origBib:
-    index += 1
-    ordered_bib = bib.replace('year','\n  year={'+str(index)+'},\n  realyear')
+    index -= 1
+    ordered_bib = bib.replace('year','year={'+str(index)+'},\n  realyear')
     fOrderedBib.write(ordered_bib)
 fOrderedBib.close()
 
