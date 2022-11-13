@@ -3,6 +3,7 @@
 
 import bibTools
 import os
+import sys
 
 site_dir = '/home/data/BA21038029/ssh_update_bib_test/research-group-web/'
 main_bib_fileName = site_dir + 'bib/QKDLAB.bib'
@@ -11,7 +12,7 @@ config_fileName = site_dir + '_data/people.yml'
 personalbib_path = site_dir + 'bib/personal_bib/'
 personalhtml_path = site_dir + '_includes/personal_bib_autogen/'
 
-username = 'wshuang'
+username = sys.argv[1]
 old_bib_file = personalbib_path + username + '.bib'
 new_bib_file = personalbib_path + username + '.modified.bib'
 
