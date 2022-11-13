@@ -12,6 +12,7 @@ phone:
 email: weich@ustc.edu.cn
 
 image: /img/people/faculty_chenwei/faculty_chenwei.png
+bib: faculty_chenwei.bib
 
 layout: personal_page_template_1
 ---

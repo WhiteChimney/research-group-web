@@ -7,6 +7,7 @@ faculty_example:
 
 faculty_hanzhengfu:
     display_name: "韩正甫"
+    bib_name: "Han, Zheng-Fu"
     role: faculty
     image: /img/people/faculty_hanzhengfu/faculty_hanzhengfu.png
     bio: 教授
@@ -14,6 +15,7 @@ faculty_hanzhengfu:
 
 faculty_chenwei:
     display_name: "陈巍"
+    bib_name: "Chen, Wei"
     role: faculty
     image: /img/people/faculty_chenwei/faculty_chenwei.png
     bio: 研究员
@@ -21,6 +23,7 @@ faculty_chenwei:
 
 faculty_wangshuang:
     display_name: "王双"
+    bib_name: "Wang, Shuang"
     role: faculty
     image: /img/people/faculty_wangshuang/faculty_wangshuang.png
     bio: 教授
@@ -28,6 +31,7 @@ faculty_wangshuang:
 
 faculty_yinzhenqiang:
     display_name: "银振强"
+    bib_name: "Yin, Zhen-Qiang"
     role: faculty
     image: /img/people/faculty_yinzhenqiang/faculty_yinzhenqiang.png
     bio: 特任教授
@@ -35,6 +39,7 @@ faculty_yinzhenqiang:
 
 faculty_hedeyong:
     display_name: "何德勇"
+    bib_name: "He, De-Yong"
     role: faculty
     image: /img/people/faculty_hedeyong/faculty_hedeyong.png
     bio: 
@@ -47,15 +52,17 @@ faculty_zhouzheng:
     bio: 
     webpage: "http://qkdlab.gaokeyan.xyz/people/faculty_zhouzheng.html"
 
-postdoc_fanyuanguanjie:
+faculty_fanyuanguanjie:
     display_name: "范元冠杰"
+    bib_name: "Fan-Yuan, Guan-Jie"
     role: faculty
     image: /img/people/faculty_fanyuanguanjie/faculty_fanyuanguanjie.png
     bio: 特任副研究员
     webpage: "http://qkdlab.gaokeyan.xyz/people/faculty_fanyuanguanjie.html"
 
-postdoc_wangfangxiang:
+faculty_wangfangxiang:
     display_name: "王纺翔"
+    bib_name: "Wang, Fang-Xiang"
     role: faculty
     image: /img/people/faculty_wangfangxiang/faculty_wangfangxiang.png
     bio: 特任副研究员

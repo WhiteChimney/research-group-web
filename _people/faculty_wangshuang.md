@@ -12,6 +12,7 @@ phone: 0551-63600808-8207
 email: wshuang@ustc.edu.cn
 
 image: /img/people/faculty_wangshuang/faculty_wangshuang.png
+bib: faculty_wangshuang.bib
 
 layout: personal_page_template_1
 ---

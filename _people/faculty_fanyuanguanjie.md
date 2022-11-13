@@ -12,6 +12,7 @@ phone:
 email: fanygj@ustc.edu.cn
 
 image: /img/people/faculty_fanyuanguanjie/faculty_fanyuanguanjie.png
+bib: faculty_fanyuanguanjie.bib
 
 layout: personal_page_template_1
 ---

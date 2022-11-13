@@ -1,5 +1,5 @@
 # targets that aren't filenames
-.PHONY: all clean deploy build serve
+.PHONY: all clean deploy build serve run
 
 all: build
 
