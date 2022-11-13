@@ -11,8 +11,8 @@ office: 中国科学技术大学东区量子信息重点实验室207
 phone: 0551-63600808-8207
 email: wshuang@ustc.edu.cn
 
-image: /img/people/faculty_wangshuang/faculty_wangshuang.png
-bib: faculty_wangshuang.bib
+image: /img/people/wshuang/wshuang.png
+bib: wshuang.bib
 
 layout: personal_page_template_1
 ---

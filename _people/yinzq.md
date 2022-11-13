@@ -11,8 +11,8 @@ office: 中国科学技术大学东区量子信息重点实验室
 phone: 0551-63607342
 email: yinzq@ustc.edu.cn
 
-image: /img/people/faculty_yinzhenqiang/faculty_yinzhenqiang.png
-bib: faculty_yinzhenqiang.bib
+image: /img/people/yinzq/yinzq.png
+bib: yinzq.bib
 
 layout: personal_page_template_1
 ---

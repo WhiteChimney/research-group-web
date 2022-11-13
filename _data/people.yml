@@ -5,45 +5,45 @@ faculty_example:
     bio: 
     webpage: "http://qkdlab.gaokeyan.xyz/people/faculty_example.html"
 
-faculty_hanzhengfu:
+zfhan:
     display_name: "韩正甫"
     bib_name: "Han, Zheng-Fu"
     role: faculty
-    image: /img/people/faculty_hanzhengfu/faculty_hanzhengfu.png
+    image: /img/people/zfhan/zfhan.png
     bio: 教授
-    webpage: "http://qkdlab.gaokeyan.xyz/people/faculty_hanzhengfu.html"
+    webpage: "http://qkdlab.gaokeyan.xyz/people/zfhan.html"
 
-faculty_chenwei:
+weich:
     display_name: "陈巍"
     bib_name: "Chen, Wei"
     role: faculty
-    image: /img/people/faculty_chenwei/faculty_chenwei.png
+    image: /img/people/weich/weich.png
     bio: 研究员
-    webpage: "http://qkdlab.gaokeyan.xyz/people/faculty_chenwei.html"
+    webpage: "http://qkdlab.gaokeyan.xyz/people/weich.html"
 
-faculty_wangshuang:
+wshuang:
     display_name: "王双"
     bib_name: "Wang, Shuang"
     role: faculty
-    image: /img/people/faculty_wangshuang/faculty_wangshuang.png
+    image: /img/people/wshuang/wshuang.png
     bio: 教授
-    webpage: "http://qkdlab.gaokeyan.xyz/people/faculty_wangshuang.html"
+    webpage: "http://qkdlab.gaokeyan.xyz/people/wshuang.html"
 
-faculty_yinzhenqiang:
+yinzq:
     display_name: "银振强"
     bib_name: "Yin, Zhen-Qiang"
     role: faculty
-    image: /img/people/faculty_yinzhenqiang/faculty_yinzhenqiang.png
+    image: /img/people/yinzq/yinzq.png
     bio: 特任教授
-    webpage: "http://qkdlab.gaokeyan.xyz/people/faculty_yinzhenqiang.html"
+    webpage: "http://qkdlab.gaokeyan.xyz/people/yinzq.html"
 
-faculty_hedeyong:
+hedeyong:
     display_name: "何德勇"
     bib_name: "He, De-Yong"
     role: faculty
-    image: /img/people/faculty_hedeyong/faculty_hedeyong.png
+    image: /img/people/hedeyong/hedeyong.jpg
     bio: 
-    webpage: "http://qkdlab.gaokeyan.xyz/people/faculty_hedeyong.html"
+    webpage: "http://qkdlab.gaokeyan.xyz/people/hedeyong.html"
 
 faculty_zhouzheng:
     display_name: "周政"
@@ -52,13 +52,13 @@ faculty_zhouzheng:
     bio: 
     webpage: "http://qkdlab.gaokeyan.xyz/people/faculty_zhouzheng.html"
 
-faculty_fanyuanguanjie:
+fanygj:
     display_name: "范元冠杰"
     bib_name: "Fan-Yuan, Guan-Jie"
     role: faculty
-    image: /img/people/faculty_fanyuanguanjie/faculty_fanyuanguanjie.png
+    image: /img/people/fanygj/fanygj.png
     bio: 特任副研究员
-    webpage: "http://qkdlab.gaokeyan.xyz/people/faculty_fanyuanguanjie.html"
+    webpage: "http://qkdlab.gaokeyan.xyz/people/fanygj.html"
 
 faculty_wangfangxiang:
     display_name: "王纺翔"

@@ -10,7 +10,7 @@ layout: personal_page_default
             </div>
 
             <p>
-            <h3>{{ page.name }}（{{ page.position }}）</h3>
+            <h3>{{ page.name }}{% if page.position %}（{{ page.position }}）{% endif %}</h3>
             </p>
 
             {% if page.titles %}

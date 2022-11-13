@@ -1,4 +1,4 @@
-site_dir = '/home/ubuntu/research-group-web/'
+site_dir = '/home/data/BA21038029/ssh_update_bib_test/research-group-web/'
 orig_bib_fileName = site_dir + 'bib/pubs_original.bib'
 ordered_bib_fileName = site_dir + 'bib/pubs.bib'
 config_fileName = site_dir + '_data/people.yml'

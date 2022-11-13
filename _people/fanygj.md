@@ -11,8 +11,8 @@ office: 中国科学技术大学东区量子信息重点实验室
 phone: 
 email: fanygj@ustc.edu.cn
 
-image: /img/people/faculty_fanyuanguanjie/faculty_fanyuanguanjie.png
-bib: faculty_fanyuanguanjie.bib
+image: /img/people/fanygj/fanygj.png
+bib: fanygj.bib
 
 layout: personal_page_template_1
 ---
