@@ -4,6 +4,14 @@ class Person(object):
     def __init__(self,name):
         self.name = name
 
+class Bib(object):
+    title = ''
+    author = ''
+    year = 1958
+    featured = False
+    def __init__(self,label):
+        self.label = label
+
 def personListFromConfigFile(config_fileName):
     fConfig = open(config_fileName, 'r')
     textList = fConfig.read().split('\n\n')
@@ -164,3 +172,30 @@ def extractPersonalBib(bib_name, original_bib_file, personal_bib_file):
             fPersonalBib.write(bib)
     
     fPersonalBib.close()
+
+def text2bib(bib_text):
+    index = bib_text.find('@')
+    label = bib_text[bib_text.find('{',index)+1:bib_text.find('\n',index)]
+    label = label.strip()
+    if (label[-1] == ','):
+        label = label[0:-1]
+    bib = Bib(label)
+
+    index = bib_text.find('title')
+    bib.title = bib_text[bib_text.find('{',index)+1:bib_text.find('}',index)]
+
+    index = bib_text.find('author')
+    bib.author = bib_text[bib_text.find('{',index)+1:bib_text.find('}',index)]
+
+    index = bib_text.find('year')
+    bib.year = int(bib_text[bib_text.find('{',index)+1:bib_text.find('}',index)])
+
+    index = bib_text.find('featured')
+    if (index != -1):
+        feature = bib_text[bib_text.find('{',index)+1:bib_text.find('}',index)]
+        if (feature == 'true' or feature == 'True'):
+            bib.featured = True
+    else:
+        bib.featured = False
+
+    return bib
