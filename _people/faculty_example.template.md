@@ -12,6 +12,7 @@ phone: 0551-66362104
 email: zhangsan@ustc.edu.cn
 
 image: /img/people/faculty_example/faculty_example.png
+bib: zhangsan.bib
 
 layout: personal_page_template_1
 ---
