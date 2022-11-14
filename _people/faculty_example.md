@@ -32,7 +32,7 @@ layout: personal_page_template_1
 
 ## 关于修改
 ---------------
-如果不想太多了解语法，可以直接下载[模板文件](http://qkdlab.gaokeyan.xyz/files/faculty_template.zip)修改即可，图片等资源文件交给管理员统一处理。效果如下图所示，左图为编辑文本，右图为显示效果。
+如果不想太多了解语法，可以直接下载[模板文件](http://qkdlab.gaokeyan.xyz/files/example_template.zip)修改即可，图片等资源文件交给管理员统一处理。效果如下图所示，左图为编辑文本，右图为显示效果。
 <div style="text-align:center">
     <img src="/img/people/faculty_example/模板编辑效果.png" title="模板编辑效果" width="39%"/>
     <img src="/img/people/faculty_example/模板网页效果.png" title="模板网页效果" width="60%"/>
