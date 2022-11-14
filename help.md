@@ -27,7 +27,7 @@ A. 根据要求修改 Bib 文件，如下图所示。
     <img src="/img/Bib_setup_standards.png" title="Bib 条目设置标准" width="100%"/>
 </div>
 
-B. 使用软件上传修改后的文件
+B. 使用软件上传修改后的文件 [下载地址](https://gitee.com/white8chimney/QkdlabBibUpdater/releases)
 
     1. 登陆服务器，指示灯亮后表示连通
     2. 下载 Bib 文件，按上面的要求添加并修改（可以调换顺序，即为个人主页的展示顺序）
