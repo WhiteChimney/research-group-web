@@ -49,5 +49,7 @@ navigation:
     link: /publications.html
   - title: 加入我们
     link: /joinus.html
+  - title: 使用指南
+    link: /help.html
   - title: 其他
     link: /others.html
