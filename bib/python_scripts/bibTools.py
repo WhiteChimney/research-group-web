@@ -1,16 +1,21 @@
+import re
+
 class Person(object):
     bib_name = ''
     enable_website = False
     def __init__(self,name):
         self.name = name
 
+
 class Bib(object):
     title = ''
     author = ''
     year = 1958
+    doi = ''
     featured = False
     def __init__(self,label):
         self.label = label
+
 
 def personListFromConfigFile(config_fileName):
     fConfig = open(config_fileName, 'r')
@@ -28,6 +33,17 @@ def personListFromConfigFile(config_fileName):
                 temp_person.enable_website = True
     
     return personList
+
+
+def revert_author_name(author_name):
+    author_list = author_name.split(' and ')
+    reverted_name = ''
+    for name in author_list:
+        temp = name.split(', ')
+        reverted_name += temp[-1] + ' ' + temp[0] + ' and '
+    reverted_name = reverted_name[0:-5]
+    return reverted_name
+
 
 def importBib(bib_file):
     fBib = open(bib_file, 'r')
@@ -47,16 +63,19 @@ def importBib(bib_file):
 
     fBib.close()
 
-    return bibList
+    bibListNew = [];
+    for bib in bibList:
+        author_start = bib.find('{',bib.find('author'))+1
+        author_end = bib.find('}',author_start)
+        author_text = bib[author_start:author_end]
+        if (author_text.find(',') != -1):
+            author_text_ordered = revert_author_name(author_text)
+            bibListNew.append(bib.replace(author_text,author_text_ordered))
+        else:
+            bibListNew.append(bib)
 
-def revert_author_name(author_name):
-    author_list = author_name.split(' and ')
-    reverted_name = ''
-    for name in author_list:
-        temp = name.split(', ')
-        reverted_name += temp[-1] + ' ' + temp[0] + ', '
-    reverted_name = reverted_name[0:-2]
-    return reverted_name
+    return bibListNew
+
 
 def bib2html(bib_file, html_file, author_name):
     bibList = importBib(bib_file)
@@ -74,9 +93,8 @@ def bib2html(bib_file, html_file, author_name):
             # author
             author_start = bib.find('{',bib.find('author'))+1
             author_end = bib.find('}',author_start)
-            author_text = bib[author_start:author_end]
-            author_text = revert_author_name(author_text)
-            author_text = author_text.replace(revert_author_name(author_name),'<strong><em>'+revert_author_name(author_name)+'</strong></em>')
+            author_text = bib[author_start:author_end].replace(' and ',', ')
+            author_text = author_text.replace(author_name,'<strong><em>'+author_name+'</strong></em>')
             author_text += ', '
             fHtml.write(author_text)
         
@@ -161,7 +179,10 @@ def sortBibForWebpage(orig_bib_fileName, sorted_bib_fileName):
         else:
             yearToWrite = bib[bib.find('{',bib.find('year'))+1:bib.find('}',bib.find('year'))]
         ordered_bib = bib.replace('year','year={'+yearToWrite+'},\n  realyear')
-        fOrderedBib.write(ordered_bib)
+        if (bib.find('pdf_path') != -1):
+            ordered_bib = ordered_bib.replace('url','webUrl')
+            ordered_bib = ordered_bib.replace('pdf_path','url')
+        fOrderedBib.write(ordered_bib.replace('abstract','noabstract'))
     fOrderedBib.close()
 
 def extractPersonalBib(bib_name, original_bib_file, personal_bib_file):
@@ -182,16 +203,20 @@ def text2bib(bib_text):
         label = label[0:-1]
     bib = Bib(label)
 
-    index = bib_text.find('title')
+    index = bib_text.casefold().find('title')
     bib.title = bib_text[bib_text.find('{',index)+1:bib_text.find('}',index)]
 
-    index = bib_text.find('author')
+    index = bib_text.casefold().find('author')
     bib.author = bib_text[bib_text.find('{',index)+1:bib_text.find('}',index)]
 
-    index = bib_text.find('year')
+    index = bib_text.casefold().find('year')
     bib.year = int(bib_text[bib_text.find('{',index)+1:bib_text.find('}',index)])
 
-    index = bib_text.find('featured')
+    index = bib_text.casefold().find('doi')
+    if (index != -1):
+        bib.doi = bib_text[bib_text.find('{',index)+1:bib_text.find('}',index)]
+
+    index = bib_text.casefold().find('featured')
     if (index != -1):
         feature = bib_text[bib_text.find('{',index)+1:bib_text.find('}',index)]
         if (feature == 'true' or feature == 'True'):

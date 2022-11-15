@@ -7,7 +7,7 @@ faculty_example:
 
 zfhan:
     display_name: "韩正甫"
-    bib_name: "Han, Zheng-Fu"
+    bib_name: "Zheng-Fu Han"
     role: faculty
     image: /people/zfhan/zfhan.png
     bio: 教授
@@ -15,7 +15,7 @@ zfhan:
 
 weich:
     display_name: "陈巍"
-    bib_name: "Chen, Wei"
+    bib_name: "Wei Chen"
     role: faculty
     image: /people/weich/weich.png
     bio: 研究员
@@ -23,7 +23,7 @@ weich:
 
 wshuang:
     display_name: "王双"
-    bib_name: "Wang, Shuang"
+    bib_name: "Shuang Wang"
     role: faculty
     image: /people/wshuang/wshuang.png
     bio: 教授
@@ -31,7 +31,7 @@ wshuang:
 
 yinzq:
     display_name: "银振强"
-    bib_name: "Yin, Zhen-Qiang"
+    bib_name: "Zhen-Qiang Yin"
     role: faculty
     image: /people/yinzq/yinzq.png
     bio: 特任教授
@@ -39,7 +39,7 @@ yinzq:
 
 hedeyong:
     display_name: "何德勇"
-    bib_name: "He, De-Yong"
+    bib_name: "De-Yong He"
     role: faculty
     image: /people/hedeyong/hedeyong.jpg
     bio: 
@@ -54,7 +54,7 @@ faculty_zhouzheng:
 
 fanygj:
     display_name: "范元冠杰"
-    bib_name: "Fan-Yuan, Guan-Jie"
+    bib_name: "Guan-Jie Fan-Yuan"
     role: faculty
     image: /people/fanygj/fanygj.png
     bio: 特任副研究员
@@ -62,7 +62,7 @@ fanygj:
 
 faculty_wangfangxiang:
     display_name: "王纺翔"
-    bib_name: "Wang, Fang-Xiang"
+    bib_name: "Fang-Xiang Wang"
     role: faculty
     image: /people/faculty_wangfangxiang/faculty_wangfangxiang.png
     bio: 特任副研究员

@@ -8,26 +8,40 @@ title: 网页配置使用指南
 ## 配置流程
 ================================
 
-### 个人网页
+### 软件与模板下载
+
+1. 软件下载：QkdlabBibUpdater（点击下载：[Windows](http://qkdlab.gaokeyan.xyz/files/QkdlabBibUpdater.exe) or [macOS](http://qkdlab.gaokeyan.xyz/files/QkdlabBibUpdater.dmg)）
+2. 「个人主页」模板文件：[点击下载](http://qkdlab.gaokeyan.xyz/files/example_template.zip)
+3. 「研究项目」模板文件：[点击下载](http://qkdlab.gaokeyan.xyz/files/projects_template.zip)
+4. 「新闻」模板文件：[点击下载](http://qkdlab.gaokeyan.xyz/files/posts_template.zip)
+
+### 个人网页配置
 --------------
-编辑 _people/xxx.md 文件，并将所用到的资源文件（如图片）一起提交给管理员处理即可。
-具体编辑步骤可以参看这个[网页](https://qkdlab.gaokeyan.xyz/people/faculty_example.html)。
+1. 下载个人主页的模板文件
+2. 编辑 _people/xxx.md 文件，并将所用到的资源文件（如图片）放置于同一目录下
+3. 具体编辑 md 文件的步骤可以参看这个[网页](https://qkdlab.gaokeyan.xyz/people/faculty_example/faculty_example.html)
+4. 使用 *QKDLAB Bib 管理软件* 打开临时文件目录
+5. 将编辑好的文件放置于如图所示的目录下
+6. 点击软件的上传并布署网页的按钮，等待约 5 秒后即可在本网站查看修改效果
 
-### 发表工作
+<div style="text-align:center">
+    <img src="/img/help/upload_personal_page.png" title="如何上传个人主页" width="100%"/>
+</div>
+
+### 发表工作维护
 -------------
+A. 根据要求修改 Bib 文件，如下图所示。(*辛苦三分钟，造福全组人~*)
 
-A. 根据要求修改 Bib 文件，如下图所示。
-
-    1. 为确保统一性，从谷歌学术上获取原始 bib 条目信息，
-    2. 检查作者信息，确保其名字格式为“姓，名”的形式，e.g. "Han, Zheng-Fu"，注意逗号后、姓名前后有空格
-    3. 添加 pdf 文件路径，格式为 `url={/bib/pdf/xxx.pdf},` 如下，建议命名为 bib 的 Label
+    1. 为确保信息的完整、准确与统一，请老师同学从学术出版商的页面上获取原始 bibtex 条目信息，（如 PR 系列到 aps 官网，ol、oe 等到 osa 网站上去下载）
+    2. 检查作者信息，确保一个 bib 条目中的名字格式为“姓，名”或“名 姓”的其中之一，不要有混搭；且三个字以上的作者的名之间用短横相连。例如，"Han, Zheng-Fu"或"Zheng-Fu Han"。注意逗号后、姓名前后有空格
+    3. 添加 pdf 文件路径，格式为 `pdf_path={/bib/pdf/xxx.pdf},` 如图所示，建议命名为 bib 的 Label
     4. 检查以上条目结尾是否缺少逗号
 
 <div style="text-align:center">
     <img src="/img/Bib_setup_standards.png" title="Bib 条目设置标准" width="100%"/>
 </div>
 
-B. 使用软件上传修改后的文件（下载地址：[Windows](http://qkdlab.gaokeyan.xyz/files/QkdlabBibUpdater.exe) or [macOS](http://qkdlab.gaokeyan.xyz/files/QkdlabBibUpdater.dmg)）
+B. 使用软件上传修改后的文件
 
     1. 登陆服务器（登陆信息请咨询管理员），指示灯亮后表示连通
     2. 下载 Bib 文件，按上面的要求添加并修改（可以调换顺序，即为个人主页的展示顺序）
