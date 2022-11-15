@@ -11,7 +11,7 @@ office: 中国科学技术大学东区量子信息重点实验室
 phone: 
 email: weich@ustc.edu.cn
 
-image: /img/people/weich/weich.png
+image: weich/weich.png
 bib: weich.bib
 
 layout: personal_page_template_1

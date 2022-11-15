@@ -3,7 +3,7 @@
 import bibTools
 from bibTools import Person
 
-site_dir = '/home/data/BA21038029/ssh_update_bib_test/research-group-web/'
+site_dir = '/home/data/blog/research-group-web/'
 main_bib_fileName = site_dir + 'bib/QKDLAB.bib'
 sorted_bib_fileName = site_dir + 'bib/pubs.bib'
 config_fileName = site_dir + '_data/people.yml'

@@ -11,7 +11,7 @@ office: 中国科学技术大学东区量子信息重点实验室
 phone: 
 email: hedeyong@mail.ustc.edu.cn
 
-image: /img/people/hedeyong/hedeyong.jpg
+image: hedeyong/hedeyong.jpg
 bib: hedeyong.bib
 
 layout: personal_page_template_1

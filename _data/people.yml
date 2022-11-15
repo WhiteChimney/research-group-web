@@ -1,179 +1,179 @@
 faculty_example:
     display_name: "示例教师"
     role: faculty
-    image: /img/people/faculty_example/faculty_example.png
+    image: /people/faculty_example/faculty_example.png
     bio: 
-    webpage: "http://qkdlab.gaokeyan.xyz/people/faculty_example.html"
+    webpage: "http://qkdlab.gaokeyan.xyz/people/faculty_example/faculty_example.html"
 
 zfhan:
     display_name: "韩正甫"
     bib_name: "Han, Zheng-Fu"
     role: faculty
-    image: /img/people/zfhan/zfhan.png
+    image: /people/zfhan/zfhan.png
     bio: 教授
-    webpage: "http://qkdlab.gaokeyan.xyz/people/zfhan.html"
+    webpage: "http://qkdlab.gaokeyan.xyz/people/zfhan/zfhan.html"
 
 weich:
     display_name: "陈巍"
     bib_name: "Chen, Wei"
     role: faculty
-    image: /img/people/weich/weich.png
+    image: /people/weich/weich.png
     bio: 研究员
-    webpage: "http://qkdlab.gaokeyan.xyz/people/weich.html"
+    webpage: "http://qkdlab.gaokeyan.xyz/people/weich/weich.html"
 
 wshuang:
     display_name: "王双"
     bib_name: "Wang, Shuang"
     role: faculty
-    image: /img/people/wshuang/wshuang.png
+    image: /people/wshuang/wshuang.png
     bio: 教授
-    webpage: "http://qkdlab.gaokeyan.xyz/people/wshuang.html"
+    webpage: "http://qkdlab.gaokeyan.xyz/people/wshuang/wshuang.html"
 
 yinzq:
     display_name: "银振强"
     bib_name: "Yin, Zhen-Qiang"
     role: faculty
-    image: /img/people/yinzq/yinzq.png
+    image: /people/yinzq/yinzq.png
     bio: 特任教授
-    webpage: "http://qkdlab.gaokeyan.xyz/people/yinzq.html"
+    webpage: "http://qkdlab.gaokeyan.xyz/people/yinzq/yinzq.html"
 
 hedeyong:
     display_name: "何德勇"
     bib_name: "He, De-Yong"
     role: faculty
-    image: /img/people/hedeyong/hedeyong.jpg
+    image: /people/hedeyong/hedeyong.jpg
     bio: 
-    webpage: "http://qkdlab.gaokeyan.xyz/people/hedeyong.html"
+    webpage: "http://qkdlab.gaokeyan.xyz/people/hedeyong/hedeyong.html"
 
 faculty_zhouzheng:
     display_name: "周政"
     role: faculty
-    image: /img/people/faculty_zhouzheng/faculty_zhouzheng.png
+    image: /people/faculty_zhouzheng/faculty_zhouzheng.png
     bio: 
-    webpage: "http://qkdlab.gaokeyan.xyz/people/faculty_zhouzheng.html"
+    webpage: "http://qkdlab.gaokeyan.xyz/people/faculty_zhouzheng/faculty_zhouzheng.html"
 
 fanygj:
     display_name: "范元冠杰"
     bib_name: "Fan-Yuan, Guan-Jie"
     role: faculty
-    image: /img/people/fanygj/fanygj.png
+    image: /people/fanygj/fanygj.png
     bio: 特任副研究员
-    webpage: "http://qkdlab.gaokeyan.xyz/people/fanygj.html"
+    webpage: "http://qkdlab.gaokeyan.xyz/people/fanygj/fanygj.html"
 
 faculty_wangfangxiang:
     display_name: "王纺翔"
     bib_name: "Wang, Fang-Xiang"
     role: faculty
-    image: /img/people/faculty_wangfangxiang/faculty_wangfangxiang.png
+    image: /people/faculty_wangfangxiang/faculty_wangfangxiang.png
     bio: 特任副研究员
     webpage: "http://qkdlab.gaokeyan.xyz/people/postdoc_wangfangxiang.html"
 
 postdoc_lufengyu:
     display_name: "卢奉宇"
     role: postdoc
-    image: /img/people/postdoc_lufengyu/postdoc_lufengyu.png
+    image: /people/postdoc_lufengyu/postdoc_lufengyu.png
     bio: 
     webpage: "http://qkdlab.gaokeyan.xyz/people/postdoc_lufengyu.html"
 
 postdoc_zhangguowei:
     display_name: "张国威"
     role: postdoc
-    image: /img/people/postdoc_zhangguowei/postdoc_zhangguowei.png
+    image: /people/postdoc_zhangguowei/postdoc_zhangguowei.png
     bio: 
     webpage: "http://qkdlab.gaokeyan.xyz/people/postdoc_zhangguowei.html"
 
 grad_luqihang:
     display_name: "卢启航"
     role: grad
-    image: /img/people/grad_luqihang.png
+    image: /people/grad_luqihang.png
     webpage: "http://qkdlab.gaokeyan.xyz/people/grad_luqihang.html"
 
 grad_yepeng:
     display_name: "叶鹏"
     role: grad
-    image: /img/people/grad_yepeng.png
+    image: /people/grad_yepeng.png
     webpage: "http://qkdlab.gaokeyan.xyz/people/grad_yepeng.html"
 
 grad_wangruiqiang:
     display_name: "王瑞强"
     role: grad
-    image: /img/people/grad_wangruiqiang.png
+    image: /people/grad_wangruiqiang.png
     webpage: "http://qkdlab.gaokeyan.xyz/people/grad_wangruiqiang.html"
 
 grad_zhongzhenqiu:
     display_name: "仲振秋"
     role: grad
-    image: /img/people/grad_zhongzhenqiu.png
+    image: /people/grad_zhongzhenqiu.png
     webpage: "http://qkdlab.gaokeyan.xyz/people/grad_zhongzhenqiu.html"
 
 grad_haungguanzhong:
     display_name: "黄冠中"
     role: grad
-    image: /img/people/grad_haungguanzhong.png
+    image: /people/grad_haungguanzhong.png
     webpage: "http://qkdlab.gaokeyan.xyz/people/grad_haungguanzhong.html"
 
 grad_tengjun:
     display_name: "滕俊"
     role: grad
-    image: /img/people/grad_tengjun.png
+    image: /people/grad_tengjun.png
     webpage: "http://qkdlab.gaokeyan.xyz/people/grad_tengjun.html"
 
 grad_zhenxuetao:
     display_name: "郑学涛"
     role: grad
-    image: /img/people/grad_zhenxuetao.png
+    image: /people/grad_zhenxuetao.png
     webpage: "http://qkdlab.gaokeyan.xyz/people/grad_zhenxuetao.html"
 
 grad_wangzehao:
     display_name: "王泽浩"
     role: grad
-    image: /img/people/grad_wangzehao.png
+    image: /people/grad_wangzehao.png
     webpage: "http://qkdlab.gaokeyan.xyz/people/grad_wangzehao.html"
 
 grad_chenjialin_21:
     display_name: "陈佳林"
     role: grad
-    image: /img/people/grad_chenjialin_21.png
+    image: /people/grad_chenjialin_21.png
     webpage: "http://qkdlab.gaokeyan.xyz/people/grad_chenjialin_21.html"
 
 grad_kangxiang:
     display_name: "康翔"
     role: grad
-    image: /img/people/grad_kangxiang.png
+    image: /people/grad_kangxiang.png
     webpage: "http://qkdlab.gaokeyan.xyz/people/grad_kangxiang.html"
 
 
 grad_zhouyao:
     display_name: "周姚"
     role: grad
-    image: /img/people/grad_zhouyao.png
+    image: /people/grad_zhouyao.png
     webpage: "http://qkdlab.gaokeyan.xyz/people/grad_zhouyao.html"
 
 
 grad_zhanxiaohai:
     display_name: "展啸海"
     role: grad
-    image: /img/people/grad_zhanxiaohai.png
+    image: /people/grad_zhanxiaohai.png
     webpage: "http://qkdlab.gaokeyan.xyz/people/grad_zhanxiaohai.html"
 
 
 ugrad_xxx:
     display_name: "某本科同学"
     role: ugrad
-    image: /img/people/ugrad_xxx.png
+    image: /people/ugrad_xxx.png
     bio: 本科生
     webpage: "http://qkdlab.gaokeyan.xyz/people/ugrad_xxx.html"
 
 collab_xxx:
     display_name: "某合作者"
     role: collab
-    image: /img/people/collab_xxx.png
+    image: img/people/collab_xxx.png
     bio: 合作者
     webpage: "http://qkdlab.gaokeyan.xyz/people/collab_xxx.html"
 
 alum_xxx:
     display_name: "某毕业生"
     role: alum
-    image: /img/people/alum_xxx.png
+    image: /people/alum_xxx.png
     bio: 大师兄/姐
     webpage: "http://qkdlab.gaokeyan.xyz/people/alum_xxx.html"

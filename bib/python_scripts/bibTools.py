@@ -42,7 +42,8 @@ def importBib(bib_file):
                 tempBib = ''
         tempBib += line
         line = fBib.readline()
-    bibList.append(tempBib)
+    if (tempBib != ''):
+        bibList.append(tempBib)
 
     fBib.close()
 
