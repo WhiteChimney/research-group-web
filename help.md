@@ -14,7 +14,7 @@ title: 网页配置使用指南
 2. 「个人主页」模板文件：[点击下载](http://qkdlab.gaokeyan.xyz/files/example_template.zip)
 3. 「研究项目」模板文件：[点击下载](http://qkdlab.gaokeyan.xyz/files/projects_template.zip)
 4. 「新闻」模板文件：[点击下载](http://qkdlab.gaokeyan.xyz/files/posts_template.zip)
-5. 本「指南」页面的 [md 原文件](http://qkdlab.gaokeyan.xyz/files/help.zip)，可以作为一些 Markdown 语法使用的参考。
+5. 本「指南」页面及示例[个人网页](https://qkdlab.gaokeyan.xyz/people/faculty_example/faculty_example.html)的 [md 原文件](http://qkdlab.gaokeyan.xyz/files/md_template.zip)，可以作为一些 Markdown 语法使用的参考。
 
 <br>
 
