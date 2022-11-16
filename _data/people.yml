@@ -94,16 +94,6 @@ yp1419:
     bib_name: "Peng Ye"
     role: grad
 
-wangrq14:
-    display_name: "王瑞强"
-    bib_name: "Rui-Qiang Wang"
-    role: grad
-
-zzhenqiu:
-    display_name: "仲振秋"
-    bib_name: "Zhen-Qiu Zhong"
-    role: grad
-
 hgz1995:
     display_name: "黄冠中"
     bib_name: "Guan-Zhong Huang"
@@ -114,14 +104,19 @@ tengjun:
     bib_name: "Jun Teng"
     role: grad
 
+wangrq14:
+    display_name: "王瑞强"
+    bib_name: "Rui-Qiang Wang"
+    role: grad
+
 zxttao:
     display_name: "郑学涛"
     bib_name: "Xue-Tao Zhen"
     role: grad
 
-wzh98:
-    display_name: "王泽浩"
-    bib_name: "Ze-Hao Wang"
+zzhenqiu:
+    display_name: "仲振秋"
+    bib_name: "Zhen-Qiu Zhong"
     role: grad
 
 cjialin:
@@ -134,9 +129,9 @@ kx1027:
     bib_name: "Xiang Kang"
     role: grad
 
-zhouyao:
-    display_name: "周姚"
-    bib_name: "Yao Zhou"
+wzh98:
+    display_name: "王泽浩"
+    bib_name: "Ze-Hao Wang"
     role: grad
 
 xhzhan:
@@ -144,9 +139,9 @@ xhzhan:
     bib_name: "Xiao-Hai Zhan"
     role: grad
 
-huangxiaojuan:
-    display_name: "黄晓娟"
-    bib_name: "Xiao-Juan Huang"
+zhouyao:
+    display_name: "周姚"
+    bib_name: "Yao Zhou"
     role: grad
 
 fangye:
@@ -159,6 +154,11 @@ fhy1999:
     bib_name: "Hai-Yang Fu"
     role: grad
 
+huangxiaojuan:
+    display_name: "黄晓娟"
+    bib_name: "Xiao-Juan Huang"
+    role: grad
+
 wangxiang:
     display_name: "王翔"
     bib_name: "Xiang Wang"
@@ -169,19 +169,24 @@ zhangxt1:
     bib_name: "Xiao-Tian Zhang"
     role: grad
 
-dingwenjing1999:
-    display_name: "丁文静"
-    bib_name: "Wen-Jing Ding"
-    role: grad
-
 chenjialin:
     display_name: "陈稼霖"
     bib_name: "Jia-Lin Chen"
     role: grad
 
+dingwenjing1999:
+    display_name: "丁文静"
+    bib_name: "Wen-Jing Ding"
+    role: grad
+
 fx150019:
     display_name: "方向"
     bib_name: "Xiang Fang"
+    role: grad
+
+xiaohang17:
+    display_name: "金晓航"
+    bib_name: "Xiao-Hang Jin"
     role: grad
 
 sygxt:
@@ -194,29 +199,9 @@ sqwu:
     bib_name: "Si-Qi Wu"
     role: grad
 
-xiaohang17:
-    display_name: "金晓航"
-    bib_name: "Xiao-Hang Jin"
-    role: grad
-
-gmat04:
-    display_name: "陆殷杰"
-    bib_name: "Yin-Jie Lu"
-    role: grad
-
 huzhijian:
     display_name: "胡之健"
     bib_name: "Zhi-Jian Hu"
-    role: grad
-
-huzhijian:
-    display_name: "谢蔚鑫"
-    bib_name: "Wei-Xin Xie"
-    role: grad
-
-song_jy:
-    display_name: "宋婧怡"
-    bib_name: "Jing-Yi Song"
     role: grad
 
 hemero_lee:
@@ -224,11 +209,31 @@ hemero_lee:
     bib_name: "Jia-Xuan Li"
     role: grad
 
+gmat04:
+    display_name: "陆殷杰"
+    bib_name: "Yin-Jie Lu"
+    role: grad
+
+song_jy:
+    display_name: "宋婧怡"
+    bib_name: "Jing-Yi Song"
+    role: grad
+
+huzhijian:
+    display_name: "谢蔚鑫"
+    bib_name: "Wei-Xin Xie"
+    role: grad
+
 linxing:
     display_name: "林幸"
     bib_name: "Xing Lin"
     role: alum
     bio: 访问学者
+
+ahqi0816:
+    display_name: "耿佳琪"
+    bib_name: "Jia-Qi Geng"
+    role: alum
 
 yyhu11:
     display_name: "胡莹莹"
@@ -240,19 +245,14 @@ lh038030:
     bib_name: "Hang Liu"
     role: alum
 
-ahqi0816:
-    display_name: "耿佳琪"
-    bib_name: "Jia-Qi Geng"
-    role: alum
+liyuxuan:
+    display_name: "李雨轩"
+    bib_name: "Yu-Xuan Li"
+    role: collab
 
 xueyang:
     display_name: "薛阳"
     bib_name: "Yang Xue"
-    role: collab
-
-liyuxuan:
-    display_name: "李雨轩"
-    bib_name: "Yu-Xuan Li"
     role: collab
 
 # ugrad_xxx:
