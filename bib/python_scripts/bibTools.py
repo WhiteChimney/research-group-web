@@ -39,8 +39,11 @@ def revert_author_name(author_name):
     author_list = author_name.split(' and ')
     reverted_name = ''
     for name in author_list:
-        temp = name.split(', ')
-        reverted_name += temp[-1] + ' ' + temp[0] + ' and '
+        if (name.find(',') != -1):
+            temp = name.split(', ')
+            reverted_name += temp[-1].strip() + ' ' + temp[0].strip() + ' and '
+        else:
+            reverted_name += name.strip() + ' and '
     reverted_name = reverted_name[0:-5]
     return reverted_name
 
@@ -68,11 +71,8 @@ def importBib(bib_file):
         author_start = bib.find('{',bib.find('author'))+1
         author_end = bib.find('}',author_start)
         author_text = bib[author_start:author_end]
-        if (author_text.find(',') != -1):
-            author_text_ordered = revert_author_name(author_text)
-            bibListNew.append(bib.replace(author_text,author_text_ordered))
-        else:
-            bibListNew.append(bib)
+        author_text_ordered = revert_author_name(author_text.replace('\n',' ').replace('\r',' '))
+        bibListNew.append(bib.replace(author_text,author_text_ordered))
 
     return bibListNew
 
