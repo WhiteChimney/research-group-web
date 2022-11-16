@@ -11,12 +11,12 @@ title: 网页配置使用指南
 ### 软件与模板下载
 
 1. 软件下载：*QKDLAB Bib 管理软件*（点击下载：[Windows](http://qkdlab.gaokeyan.xyz/files/QkdlabBibUpdater.exe) or [macOS](http://qkdlab.gaokeyan.xyz/files/QkdlabBibUpdater.dmg)）
-
-
-
 2. 「个人主页」模板文件：[点击下载](http://qkdlab.gaokeyan.xyz/files/example_template.zip)
 3. 「研究项目」模板文件：[点击下载](http://qkdlab.gaokeyan.xyz/files/projects_template.zip)
 4. 「新闻」模板文件：[点击下载](http://qkdlab.gaokeyan.xyz/files/posts_template.zip)
+5. 本「指南」页面的 [md 原文件](http://qkdlab.gaokeyan.xyz/files/help.zip)，可以作为一些 Markdown 语法使用的参考。
+
+<br>
 
 ### 个人网页配置
 --------------
@@ -31,19 +31,21 @@ title: 网页配置使用指南
     <img src="/img/help/upload_personal_page.png" title="如何上传个人主页" width="100%"/>
 </div>
 
+<br>
 
 ### 发表工作维护
 -------------
 
-* 根据要求修改 Bib 文件，如下图所示。(*~辛苦一分钟，造福全组人~*)
-    1. 为确保信息的完整、准确与统一，请老师同学从学术出版商的页面上获取原始 bibtex 条目信息，（如 PR 系列到 aps 官网，ol、oe 等到 osa 网站上去下载）
-    2. 如果只能下载到 ris 格式的，可以到这个[在线网站](https://www.bruot.org/ris2bib/)进行转换
-    3. 检查作者信息，确保 bib 条目中的名字格式为“姓，名”或“名 姓”的其中之一；三个字以上的作者的名之间用短横相连。例如，"Han, Zheng-Fu"或"Zheng-Fu Han"。这一点非常重要，关系到文章作者的识别。[这里]()有一份组内成员 Bib 条目中的使用名称列表，请仔细比对。
-    4. 添加 pdf 文件，放置在 `bib/pdf` 路径下，格式为 `pdf_path={/bib/pdf/xxx.pdf},` 如图所示。
+* 根据要求修改 bib 文件，如下图所示。(*~辛苦三分钟，造福全组人~*)
+    1. 为确保信息的完整、准确与统一，请老师同学从学术出版商的页面上获取原始 BibTeX 条目信息（如 PR 系列到 APS 官网，OL、OE 等到 OSA 网站上去下载）
+    2. 如果只能下载到 RIS 格式的（如 Springer 旗下的网站），可以到这个[在线网站](https://www.bruot.org/ris2bib/)进行转换（如下图左所示）
+    3. 检查作者信息，确保 bib 条目中的名字格式为“姓，名”或“名 姓”的其中之一。且所用名称与组内成员发表文章时常用的名称一致。一般三个字以上的作者的名之间用短横相连，例如，"Han, Zheng-Fu"或"Zheng-Fu Han"。[这里](http://qkdlab.gaokeyan.xyz/files/组内成员BIB使用名称列表.txt)有一份组内成员 Bib 条目中的名称列表，请仔细比对（如有遗漏，请联系管理员添加）。这一点非常重要，关系到文章作者的识别。
+    4. 添加 pdf 文件，放置在 `bib/pdf` 路径下，格式为 `pdf_path={/bib/pdf/xxx.pdf},` 如下图右所示。
     5. 检查以上条目结尾是否缺少逗号
 
 <div style="text-align:center">
-    <img src="/img/help/Bib_setup_standards.png" title="Bib 条目设置标准" width="100%"/>
+    <img src="/img/help/online_ris2bib.png" title="RIS 在线转成 BIB" width="44%"/>
+    <img src="/img/help/Bib_setup_standards.png" title="Bib 条目设置标准" width="55%"/>
 </div>
 
 * 使用软件上传修改后的文件
@@ -53,7 +55,7 @@ title: 网页配置使用指南
     4. 点击确认修改，稍等 10 秒左右后到网站上即可查看到更新
 
 <div style="text-align:center">
-    <img src="/img/help/qkdbibupdater.png" title="QKDLAB Bib 管理软件" width="100%" style="max-width:600px"/>
+    <img src="/img/help/Upload_bib.png" title="通过软件维护 bib 条目" width="100%"/>
 </div>
 
 

@@ -26,10 +26,10 @@ def personListFromConfigFile(config_fileName):
         personInfoText = text.split('\n')
         temp_person = Person(personInfoText[0].strip().replace(':',''))
         for item in personInfoText:
-            if (item.find('bib_name') != -1):
+            if (item.casefold().find('bib_name') != -1):
                 temp_person.bib_name = item.strip().replace('bib_name: ','').replace('"','')
                 personList.append(temp_person)
-            if (item.find('webpage: "http://') != -1):
+            if (item.casefold().find('webpage: "http://') != -1):
                 temp_person.enable_website = True
     
     return personList
@@ -68,7 +68,7 @@ def importBib(bib_file):
 
     bibListNew = [];
     for bib in bibList:
-        author_start = bib.find('{',bib.find('author'))+1
+        author_start = bib.find('{',bib.casefold().find('author'))+1
         author_end = bib.find('}',author_start)
         author_text = bib[author_start:author_end]
         author_text_ordered = revert_author_name(author_text.replace('\n',' ').replace('\r',' '))
@@ -91,7 +91,7 @@ def bib2html(bib_file, html_file, author_name):
             fHtml.write('<li>\n<p>')
 
             # author
-            author_start = bib.find('{',bib.find('author'))+1
+            author_start = bib.find('{',bib.casefold().find('author'))+1
             author_end = bib.find('}',author_start)
             author_text = bib[author_start:author_end].replace(' and ',', ')
             author_text = author_text.replace(author_name,'<strong><em>'+author_name+'</strong></em>')
@@ -99,21 +99,21 @@ def bib2html(bib_file, html_file, author_name):
             fHtml.write(author_text)
         
             # title
-            title_start = bib.find('{',bib.find('title'))+1
+            title_start = bib.find('{',bib.casefold().find('title'))+1
             title_end = bib.find('}',title_start)
             title_text = bib[title_start:title_end]
             title_text += ', '
             fHtml.write(title_text)
 
             # journal
-            journal_start = bib.find('{',bib.find('journal'))+1
+            journal_start = bib.find('{',bib.casefold().find('journal'))+1
             journal_end = bib.find('}',journal_start)
             journal_text = '<em>' + bib[journal_start:journal_end] + '</em>'
             journal_text += ', '
             fHtml.write(journal_text)
 
             # volume
-            index = bib.find('volume')
+            index = bib.casefold().find('volume')
             if (index != -1):
                 volume_start = bib.find('{',index)+1
                 volume_end = bib.find('}',volume_start)
@@ -123,7 +123,7 @@ def bib2html(bib_file, html_file, author_name):
             fHtml.write(volume_text)
 
             # number
-            index = bib.find('number')
+            index = bib.casefold().find('number')
             if (index != -1):
                 number_start = bib.find('{',index)+1
                 number_end = bib.find('}',number_start)
@@ -134,7 +134,7 @@ def bib2html(bib_file, html_file, author_name):
             fHtml.write(number_text)
 
             # pages
-            index = bib.find('pages')
+            index = bib.casefold().find('pages')
             if (index != -1):
                 pages_start = bib.find('{',index)+1
                 pages_end = bib.find('}',pages_start)
@@ -145,7 +145,7 @@ def bib2html(bib_file, html_file, author_name):
             fHtml.write(pages_text)
 
             # ISSN
-            index = bib.find('ISSN')
+            index = bib.casefold().find('ISSN')
             if (index != -1):
                 ISSN_start = bib.find('{',index)+1
                 ISSN_end = bib.find('}',ISSN_start)
@@ -156,7 +156,7 @@ def bib2html(bib_file, html_file, author_name):
             fHtml.write(ISSN_text)
 
             # year
-            year_start = bib.find('{',bib.find('year'))+1
+            year_start = bib.find('{',bib.casefold().find('year'))+1
             year_end = bib.find('}',year_start)
             year_text = bib[year_start:year_end]
             year_text += '.'
@@ -171,15 +171,15 @@ def sortBibForWebpage(orig_bib_fileName, sorted_bib_fileName):
     fOrderedBib = open(sorted_bib_fileName, 'w')
     order = 10000
     for bib in origBib:
-        index = bib.find('featured')
+        index = bib.casefold().find('featured')
         if (index != -1):
             if (bib[bib.find('{',index)+1:bib.find('}',index)] == 'true'):
                 order -= 1
                 yearToWrite = str(order)
         else:
-            yearToWrite = bib[bib.find('{',bib.find('year'))+1:bib.find('}',bib.find('year'))]
+            yearToWrite = bib[bib.find('{',bib.casefold().find('year'))+1:bib.find('}',bib.casefold().find('year'))]
         ordered_bib = bib.replace('year','year={'+yearToWrite+'},\n  realyear')
-        if (bib.find('pdf_path') != -1):
+        if (bib.casefold().find('pdf_path') != -1):
             ordered_bib = ordered_bib.replace('url','webUrl')
             ordered_bib = ordered_bib.replace('pdf_path','url')
         fOrderedBib.write(ordered_bib.replace('abstract','noabstract'))
