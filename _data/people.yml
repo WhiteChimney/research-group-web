@@ -45,12 +45,12 @@ hedeyong:
     bio: 
     webpage: "http://qkdlab.gaokeyan.xyz/people/hedeyong/hedeyong.html"
 
-faculty_zhouzheng:
+zhouzhen:
     display_name: "周政"
     role: faculty
-    image: /people/faculty_zhouzheng/faculty_zhouzheng.png
+    image: /people/zhouzhen/zhouzhen.png
     bio: 
-    webpage: "http://qkdlab.gaokeyan.xyz/people/faculty_zhouzheng/faculty_zhouzheng.html"
+    webpage: "http://qkdlab.gaokeyan.xyz/people/zhouzhen/zhouzhen.html"
 
 fanygj:
     display_name: "范元冠杰"
@@ -60,120 +60,202 @@ fanygj:
     bio: 特任副研究员
     webpage: "http://qkdlab.gaokeyan.xyz/people/fanygj/fanygj.html"
 
-faculty_wangfangxiang:
+fxwung:
     display_name: "王纺翔"
     bib_name: "Fang-Xiang Wang"
     role: faculty
-    image: /people/faculty_wangfangxiang/faculty_wangfangxiang.png
+    image: /people/fxwung/fxwung.png
     bio: 特任副研究员
-    webpage: "http://qkdlab.gaokeyan.xyz/people/postdoc_wangfangxiang.html"
+    webpage: "http://qkdlab.gaokeyan.xyz/people/fxwung.html"
 
-postdoc_lufengyu:
+luffy196:
     display_name: "卢奉宇"
+    bib_name: "Feng-Yu Lu"
     role: postdoc
-    image: /people/postdoc_lufengyu/postdoc_lufengyu.png
+    image: /people/luffy196/luffy196.png
     bio: 
-    webpage: "http://qkdlab.gaokeyan.xyz/people/postdoc_lufengyu.html"
+    webpage: "http://qkdlab.gaokeyan.xyz/people/luffy196.html"
 
-postdoc_zhangguowei:
+zgw9305:
     display_name: "张国威"
+    bib_name: "Guo-Wei Zhang"
     role: postdoc
-    image: /people/postdoc_zhangguowei/postdoc_zhangguowei.png
+    image: /people/zgw9305/zgw9305.png
     bio: 
-    webpage: "http://qkdlab.gaokeyan.xyz/people/postdoc_zhangguowei.html"
+    webpage: "http://qkdlab.gaokeyan.xyz/people/zgw9305.html"
 
-grad_luqihang:
+qihang:
     display_name: "卢启航"
+    bib_name: "Qi-Hang Lu"
     role: grad
-    image: /people/grad_luqihang.png
-    webpage: "http://qkdlab.gaokeyan.xyz/people/grad_luqihang.html"
 
-grad_yepeng:
+yp1419:
     display_name: "叶鹏"
+    bib_name: "Peng Ye"
     role: grad
-    image: /people/grad_yepeng.png
-    webpage: "http://qkdlab.gaokeyan.xyz/people/grad_yepeng.html"
 
-grad_wangruiqiang:
+wangrq14:
     display_name: "王瑞强"
+    bib_name: "Rui-Qiang Wang"
     role: grad
-    image: /people/grad_wangruiqiang.png
-    webpage: "http://qkdlab.gaokeyan.xyz/people/grad_wangruiqiang.html"
 
-grad_zhongzhenqiu:
+zzhenqiu:
     display_name: "仲振秋"
+    bib_name: "Zhen-Qiu Zhong"
     role: grad
-    image: /people/grad_zhongzhenqiu.png
-    webpage: "http://qkdlab.gaokeyan.xyz/people/grad_zhongzhenqiu.html"
 
-grad_haungguanzhong:
+hgz1995:
     display_name: "黄冠中"
+    bib_name: "Guan-Zhong Huang"
     role: grad
-    image: /people/grad_haungguanzhong.png
-    webpage: "http://qkdlab.gaokeyan.xyz/people/grad_haungguanzhong.html"
 
-grad_tengjun:
+tengjun:
     display_name: "滕俊"
+    bib_name: "Jun Teng"
     role: grad
-    image: /people/grad_tengjun.png
-    webpage: "http://qkdlab.gaokeyan.xyz/people/grad_tengjun.html"
 
-grad_zhenxuetao:
+zxttao:
     display_name: "郑学涛"
+    bib_name: "Xue-Tao Zhen"
     role: grad
-    image: /people/grad_zhenxuetao.png
-    webpage: "http://qkdlab.gaokeyan.xyz/people/grad_zhenxuetao.html"
 
-grad_wangzehao:
+wzh98:
     display_name: "王泽浩"
+    bib_name: "Ze-Hao Wang"
     role: grad
-    image: /people/grad_wangzehao.png
-    webpage: "http://qkdlab.gaokeyan.xyz/people/grad_wangzehao.html"
 
-grad_chenjialin_21:
+cjialin:
     display_name: "陈佳林"
+    bib_name: "Jia-Lin Chen"
     role: grad
-    image: /people/grad_chenjialin_21.png
-    webpage: "http://qkdlab.gaokeyan.xyz/people/grad_chenjialin_21.html"
 
-grad_kangxiang:
+kx1027:
     display_name: "康翔"
+    bib_name: "Xiang Kang"
     role: grad
-    image: /people/grad_kangxiang.png
-    webpage: "http://qkdlab.gaokeyan.xyz/people/grad_kangxiang.html"
 
-
-grad_zhouyao:
+zhouyao:
     display_name: "周姚"
+    bib_name: "Yao Zhou"
     role: grad
-    image: /people/grad_zhouyao.png
-    webpage: "http://qkdlab.gaokeyan.xyz/people/grad_zhouyao.html"
 
-
-grad_zhanxiaohai:
+xhzhan:
     display_name: "展啸海"
+    bib_name: "Xiao-Hai Zhan"
     role: grad
-    image: /people/grad_zhanxiaohai.png
-    webpage: "http://qkdlab.gaokeyan.xyz/people/grad_zhanxiaohai.html"
 
+huangxiaojuan:
+    display_name: "黄晓娟"
+    bib_name: "Xiao-Juan Huang"
+    role: grad
 
-ugrad_xxx:
-    display_name: "某本科同学"
-    role: ugrad
-    image: /people/ugrad_xxx.png
-    bio: 本科生
-    webpage: "http://qkdlab.gaokeyan.xyz/people/ugrad_xxx.html"
+fangye:
+    display_name: "方野"
+    bib_name: "Ye Fang"
+    role: grad
 
-collab_xxx:
-    display_name: "某合作者"
-    role: collab
-    image: img/people/collab_xxx.png
-    bio: 合作者
-    webpage: "http://qkdlab.gaokeyan.xyz/people/collab_xxx.html"
+fhy1999:
+    display_name: "傅海阳"
+    bib_name: "Hai-Yang Fu"
+    role: grad
 
-alum_xxx:
-    display_name: "某毕业生"
+wangxiang:
+    display_name: "王翔"
+    bib_name: "Xiang Wang"
+    role: grad
+
+zhangxt1:
+    display_name: "张啸天"
+    bib_name: "Xiao-Tian Zhang"
+    role: grad
+
+dingwenjing1999:
+    display_name: "丁文静"
+    bib_name: "Wen-Jing Ding"
+    role: grad
+
+chenjialin:
+    display_name: "陈稼霖"
+    bib_name: "Jia-Lin Chen"
+    role: grad
+
+fx150019:
+    display_name: "方向"
+    bib_name: "Xiang Fang"
+    role: grad
+
+sygxt:
+    display_name: "单阳光"
+    bib_name: "Yang-Guang Shan"
+    role: grad
+
+sqwu:
+    display_name: "吴思琪"
+    bib_name: "Si-Qi Wu"
+    role: grad
+
+xiaohang17:
+    display_name: "金晓航"
+    bib_name: "Xiao-Hang Jin"
+    role: grad
+
+gmat04:
+    display_name: "陆殷杰"
+    bib_name: "Yin-Jie Lu"
+    role: grad
+
+huzhijian:
+    display_name: "胡之健"
+    bib_name: "Zhi-Jian Hu"
+    role: grad
+
+huzhijian:
+    display_name: "谢蔚鑫"
+    bib_name: "Wei-Xin Xie"
+    role: grad
+
+song_jy:
+    display_name: "宋婧怡"
+    bib_name: "Jing-Yi Song"
+    role: grad
+
+hemero_lee:
+    display_name: "李家萱"
+    bib_name: "Jia-Xuan Li"
+    role: grad
+
+linxing:
+    display_name: "林幸"
+    bib_name: "Xing Lin"
     role: alum
-    image: /people/alum_xxx.png
-    bio: 大师兄/姐
-    webpage: "http://qkdlab.gaokeyan.xyz/people/alum_xxx.html"
+    bio: 访问学者
+
+yyhu11:
+    display_name: "胡莹莹"
+    bib_name: "Ying-Ying Hu"
+    role: alum
+
+lh038030:
+    display_name: "刘航"
+    bib_name: "Hang Liu"
+    role: alum
+
+ahqi0816:
+    display_name: "耿佳琪"
+    bib_name: "Jia-Qi Geng"
+    role: alum
+
+xueyang:
+    display_name: "薛阳"
+    bib_name: "Yang Xue"
+    role: collab
+
+liyuxuan:
+    display_name: "李雨轩"
+    bib_name: "Yu-Xuan Li"
+    role: collab
+
+# ugrad_xxx:
+#     display_name: "某本科同学"
+#     role: ugrad
+#     bio: 本科生
