@@ -56,18 +56,26 @@ def importBib(bib_file):
 
     while (line):
         if (line[0] == "@"):
-            if (tempBib != ''):
+            if (tempBib.find('@') != -1):
                 bibList.append(tempBib)
                 tempBib = ''
         tempBib += line
         line = fBib.readline()
-    if (tempBib != ''):
+    if (tempBib.find('@') != -1):
         bibList.append(tempBib)
 
     fBib.close()
 
     bibListNew = [];
     for bib in bibList:
+        label_start = bib.find('{',bib.find('@'))+1
+        label_end = bib.find('\r',label_start)
+        if (label_end == -1):
+            label_end = bib.find('\n',label_start)
+        doi_start = bib.find('{',bib.casefold().find('doi'))+1
+        doi_end = bib.find('}',doi_start)
+        bib = bib.replace(bib[label_start:label_end],bib[doi_start:doi_end])
+
         author_start = bib.find('{',bib.casefold().find('author'))+1
         author_end = bib.find('}',author_start)
         author_text = bib[author_start:author_end]
@@ -197,11 +205,11 @@ def extractPersonalBib(bib_name, original_bib_file, personal_bib_file):
 
 def text2bib(bib_text):
     index = bib_text.find('@')
-    label = bib_text[bib_text.find('{',index)+1:bib_text.find('\n',index)]
-    label = label.strip()
-    if (label[-1] == ','):
-        label = label[0:-1]
-    bib = Bib(label)
+    label_start = bib_text.find('{',index)+1
+    label_end = bib_text.find('\r',label_start)
+    if (label_end == -1):
+        label_end = bib_text.find('\n',label_start)
+    bib = Bib(bib_text[label_start:label_end])
 
     index = bib_text.casefold().find('title')
     bib.title = bib_text[bib_text.find('{',index)+1:bib_text.find('}',index)]

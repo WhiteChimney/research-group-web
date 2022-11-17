@@ -66,7 +66,7 @@ fxwung:
     role: faculty
     image: /people/fxwung/fxwung.png
     bio: 特任副研究员
-    webpage: "http://qkdlab.gaokeyan.xyz/people/fxwung.html"
+    webpage: "http://qkdlab.gaokeyan.xyz/people/fxwung/fxwung.html"
 
 luffy196:
     display_name: "卢奉宇"
@@ -74,7 +74,7 @@ luffy196:
     role: postdoc
     image: /people/luffy196/luffy196.png
     bio: 
-    webpage: "http://qkdlab.gaokeyan.xyz/people/luffy196.html"
+    webpage: "http://qkdlab.gaokeyan.xyz/people/luffy196/luffy196.html"
 
 zgw9305:
     display_name: "张国威"
@@ -82,7 +82,7 @@ zgw9305:
     role: postdoc
     image: /people/zgw9305/zgw9305.png
     bio: 
-    webpage: "http://qkdlab.gaokeyan.xyz/people/zgw9305.html"
+    webpage: "http://qkdlab.gaokeyan.xyz/people/zgw9305/zgw9305.html"
 
 qihang:
     display_name: "卢启航"
@@ -133,6 +133,7 @@ wzh98:
     display_name: "王泽浩"
     bib_name: "Ze-Hao Wang"
     role: grad
+    webpage: "http://qkdlab.gaokeyan.xyz/people/wzh98/wzh98.html"
 
 xhzhan:
     display_name: "展啸海"

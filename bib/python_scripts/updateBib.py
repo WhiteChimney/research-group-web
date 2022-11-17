@@ -18,19 +18,19 @@ new_bib_file = personalbib_path + username + '.modified.bib'
 
 # 读取旧 bib 文件内容
 old_bib_doi = []
-old_bib_label = []
+# old_bib_label = []
 old_bib_items = bibTools.importBib(old_bib_file)
 for item in old_bib_items:
     old_bib_doi.append(bibTools.text2bib(item).doi)
-    old_bib_label.append(bibTools.text2bib(item).label)
+    # old_bib_label.append(bibTools.text2bib(item).label)
 
 # 读取修改后的 bib 文件内容
 new_bib_doi = []
-new_bib_label = []
+# new_bib_label = []
 new_bib_items = bibTools.importBib(new_bib_file)
 for item in new_bib_items:
     new_bib_doi.append(bibTools.text2bib(item).doi)
-    new_bib_label.append(bibTools.text2bib(item).label)
+    # new_bib_label.append(bibTools.text2bib(item).label)
 
 # 提取出新增的 bib 条目
 added_bib_items = []
@@ -38,9 +38,9 @@ for item in new_bib_items:
     if (bibTools.text2bib(item).doi != ''):
         if (bibTools.text2bib(item).doi not in old_bib_doi):
             added_bib_items.append(item)
-    else:
-        if (bibTools.text2bib(item).label not in old_bib_label):
-            added_bib_items.append(item)
+    # else:
+        # if (bibTools.text2bib(item).label not in old_bib_label):
+            # added_bib_items.append(item)
 
 
 # 处理新 bib 条目
@@ -83,9 +83,9 @@ for item in old_bib_items:
     if (bibTools.text2bib(item).doi != ''):
         if (bibTools.text2bib(item).doi not in new_bib_doi):
             deleted_bib_items.append(item)
-    else:
-        if (bibTools.text2bib(item).label not in new_bib_label):
-            deleted_bib_items.append(item)
+    # else:
+        # if (bibTools.text2bib(item).label not in new_bib_label):
+            # deleted_bib_items.append(item)
 
 # 删去关联 bib 条目
 if(len(deleted_bib_items)):
@@ -95,13 +95,15 @@ if(len(deleted_bib_items)):
         f = open(main_bib_fileName,'r+')
         old_content = f.read()
         deleted_index = old_content.find(bibTools.text2bib(deleted_bib).label)
-        delete_start = old_content.rfind('@',0,deleted_index)
-        delete_end = old_content.find('@',deleted_index)
-        if (delete_start != -1 and delete_end != -1):
-            f.seek(0)
-            f.truncate()
-            f.write(old_content[:delete_start])
-            f.write(old_content[delete_end:])
+        if (deleted_index != -1):
+            delete_start = old_content.rfind('@',0,deleted_index)
+            delete_end = old_content.find('@',deleted_index)
+            if (delete_start != -1):
+                f.seek(0)
+                f.truncate()
+                f.write(old_content[:delete_start])
+                if (delete_end != -1):
+                    f.write(old_content[delete_end:])
         f.close()
         
         # 删除别的关联作者的 bib 条目
@@ -110,13 +112,15 @@ if(len(deleted_bib_items)):
                 f = open(personalbib_path+person.name+'.bib','r+')
                 old_content = f.read()
                 deleted_index = old_content.find(bibTools.text2bib(deleted_bib).label)
-                delete_start = old_content.rfind('@',0,deleted_index)
-                delete_end = old_content.find('@',deleted_index)
-                if (delete_start != -1 and delete_end != -1):
-                    f.seek(0)
-                    f.truncate()
-                    f.write(old_content[:delete_start])
-                    f.write(old_content[delete_end:])
+                if (deleted_index != -1):
+                    delete_start = old_content.rfind('@',0,deleted_index)
+                    delete_end = old_content.find('@',deleted_index)
+                    if (delete_start != -1):
+                        f.seek(0)
+                        f.truncate()
+                        f.write(old_content[:delete_start])
+                        if (delete_end != -1):
+                            f.write(old_content[delete_end:])
                 f.close()
 
 os.remove(old_bib_file)
