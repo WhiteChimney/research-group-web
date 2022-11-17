@@ -11,7 +11,7 @@ office: 中国科学技术大学东区量子信息重点实验室
 phone: 0551-63607342
 email: zfhan@ustc.edu.cn
 
-image: zfhan/zfhan.png
+image: /people/zfhan/zfhan.png
 bib: zfhan.bib
 
 layout: personal_page_template_1

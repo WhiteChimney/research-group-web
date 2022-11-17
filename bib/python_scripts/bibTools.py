@@ -80,7 +80,9 @@ def importBib(bib_file):
         author_end = bib.find('}',author_start)
         author_text = bib[author_start:author_end]
         author_text_ordered = revert_author_name(author_text.replace('\n',' ').replace('\r',' '))
-        bibListNew.append(bib.replace(author_text,author_text_ordered))
+        bib = bib.replace(author_text,author_text_ordered)
+        
+        bibListNew.append(bib.replace('},','}').replace('}','},'))
 
     return bibListNew
 

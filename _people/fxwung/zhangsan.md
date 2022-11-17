@@ -11,7 +11,7 @@ office: 中国科学技术大学东区量子信息重点实验室xxx
 phone: 0551-66362104
 email: zhangsan@mail.ustc.edu.cn
 
-image: zhangsan/zhangsan.png
+image: /people/zhangsan/zhangsan.png
 bib: zhangsan.bib
 
 layout: personal_page_template_1

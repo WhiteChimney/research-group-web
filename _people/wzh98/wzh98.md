@@ -11,7 +11,7 @@ office: 中国科学技术大学东区量子信息重点实验室xxx
 phone: 0551-66362104
 email: wzh98@mail.ustc.edu.cn
 
-image: wzh98/wzh98.png
+image: /people/wzh98/pic_1.png
 bib: wzh98.bib
 
 layout: personal_page_template_1
@@ -34,12 +34,14 @@ layout: personal_page_template_1
 --------------
 * 2125.1-至今 中国科学技术大学光学与光学工程系教授
 * 2117.1-2121.1 中国科学技术大学光学与光学工程系特任教授
+* 2117.1-2121.1 中国科学技术大学光学与光学工程系特任教授
 
 
 ## 社会兼职
 --------------
 中国密码学会量子密码专业委员会委员兼秘书长。
 
+![图片](/people/wzh98/pic_1 - 副本.png)
 
 ## 科研项目
 ---------

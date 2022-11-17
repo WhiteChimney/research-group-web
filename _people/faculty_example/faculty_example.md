@@ -8,7 +8,7 @@ email: zhangsan@ustc.edu.cn
 description: |
   个人简介
 
-image: faculty_example/faculty_example.png
+image: /people/faculty_example/faculty_example.png
 layout: personal_page_template_1
 ---
 
@@ -22,7 +22,9 @@ layout: personal_page_template_1
 
 ## 文件结构
 --------------
-文件结构很简单，分为上下两部分。第一部分为标准数据，快速填写个人基本信息。第二部分从 `layout` 那一行代码往下开始，即为正文。如下图所示。`image` 为头像照片路径，文档提交后统一处理。`layout` 那一行代码用于选择网页模板，目前暂时只有一个模板，遂不可更改。
+文件结构很简单，分为上下两部分。第一部分为标准数据，快速填写个人基本信息。第二部分从 `layout` 那一行代码往下开始，即为正文。如下图所示。
+`image` 为头像照片路径，请将模板中的名字部分替换为自己的**科大邮箱账号**，照片文件名也作对应修改。
+`layout` 那一行代码用于选择网页模板，目前暂时只有一个模板，遂不可更改。
 
 <div style="text-align:center">
     <img src="/people/faculty_example/文件结构.png" title="文件结构" width="100%"/>
@@ -31,7 +33,7 @@ layout: personal_page_template_1
 
 ## 关于修改
 ---------------
-如果不想太多了解语法，可以直接下载[模板文件](http://qkdlab.gaokeyan.xyz/files/example_template.zip)修改即可，图片等资源文件交给管理员统一处理。效果如下图所示，左图为编辑文本，右图为显示效果。
+如果不想太多了解语法，可以在下载后的模板文件中按格式修改即可。效果如下图所示，左图为编辑文本，右图为显示效果。
 <div style="text-align:center">
     <img src="/people/faculty_example/模板编辑效果.png" title="模板编辑效果" width="39%"/>
     <img src="/people/faculty_example/模板网页效果.png" title="模板网页效果" width="60%"/>
@@ -58,19 +60,27 @@ n 级标题前使用 n 个 # 号，即 n 越小，字号越大。如：
 * 无序列表：星号(\*)+空格
 
 ### 强调
-* 斜体：将内容左右两边加上*星号\**
-* 加粗：将待加粗的内容左右两边加上**双星号\*\***
-* 加粗并斜体：将内容左右两边加上***三星号\*\*\****
+* 斜体：将内容左右两边加上*\*星号\**
+* 加粗：将待加粗的内容左右两边加上**\*\*双星号\*\***
+* 加粗并斜体：将内容左右两边加上***\*\*\*三星号\*\*\****
 
 ### 超链接
 这是一个链接 [Markdown语法](https://markdown.com.cn)。
 
+`[Markdown语法](https://markdown.com.cn)`
+
 ### 图片
 图片路径统一为
+
 `/people/你的USTC邮箱前缀/xxx.png(或其他格式）`
-可以使用简单的语法
-![简单的图片语法](/people/faculty_example/图片语法1.png "简单的图片语法")
-也可以使用更复杂一些的 html 语言，设置选项更多一些
+
+第一种语法较为简单，以感叹号开始，中括号内为图片 alt 标签，圆括号内先是图片路径，后面的引号内为图片 title 标签。
+其中 alt 标签指图片没显示时在图片显示区域显示一个说明文字，而 title 标签表示鼠标在图片上停留时，会显示一个悬浮框，其中的文字即是 title。
+
+![简单的图片语法](/people/faculty_example/图片语法1.png "简单的图片语法吗")
+
+另外也可以使用更复杂一些的 html 语法，设置选项更多一些，例如：
+
 <div style="text-align:center">
     <img src="/people/faculty_example/图片语法2.png" title="复杂一些的图片语法" width="80%"/>
 </div>
