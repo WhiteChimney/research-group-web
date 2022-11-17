@@ -11,7 +11,7 @@ office: 中国科学技术大学东区量子信息重点实验室xxx
 phone: 0551-66362104
 email: wzh98@mail.ustc.edu.cn
 
-image: /people/wzh98/pic_1.png
+image: /people/wzh98/wzh98.png
 bib: wzh98.bib
 
 layout: personal_page_template_1
