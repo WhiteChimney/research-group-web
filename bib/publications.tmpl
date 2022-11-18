@@ -1,6 +1,13 @@
+<p>
+<h2> 精选文章 </h2>
+</p>
+	
 <table class="table">
 <tbody>
+
 	{%- for entry in entries %}
+
+	{%- if entry.fields['featured'] %}
 	<tr>
 		<td>
 			<span class="date">
@@ -9,13 +16,21 @@
 		</td>
 		<td class="publication">
 			<span class="pubtitle">
-				{%- set url = entry|main_url %}
-				{%- if url %}
-				<img src="img/pdficon_small.png" width="16"
-					height="16" alt="PDF" />
-				<a href="{{ url|escape }}">{{ entry|title }}</a>.
+				{%- set pdf = entry.fields['pdf_path'] %}
+				{%- if pdf %}
+					<img src="img/pdf_icon.png" width="16"
+						height="16" alt="PDF" />
+					<a href="{{ url|escape }}">{{ entry|title }}</a>.
+					{%- set url = pdf %}
 				{%- else %}
-				{{ entry|title }}.
+					{%- set url = entry.fields['url'] %}
+					{%- if url %}
+						<img src="img/web_icon.png" width="16"
+							height="16" alt="PDF" />
+						<a href="{{ url|escape }}">{{ entry|title }}</a>.
+					{%- else %}
+						{{ entry|title }}.
+					{%- endif %}
 				{%- endif %}
 			</span><br />
 			<span class="authors">
@@ -33,16 +48,95 @@
 				[<a href="{{ url|escape }}">{{ type|escape }}</a>]
 			{%- endfor %}
 				{%- if entry.fields['abstract'] %}
-				[<a class="dropdown-toggle" data-toggle="dropdown" href="javascript:void(0);" onclick="$('#abstract_{{entry.fields['key']}}').slideToggle('fast');return false;">abstract</a>]
+				  <div data-view-component="true" class="Box-footer">
+					<details data-view-component="true">
+							<summary role="button" data-view-component="true">    
+								<span data-view-component="true" class="f3 text-bold d-inline mr-3">Abstract</span>
+							</summary>
+							{%- if entry.fields['abstract'] %}
+							<div id="abstract_{{entry.fields['key']}}" class="abstract">
+							{{ entry.fields['abstract'] |escape }}
+							</div>
+							{%- endif %}
+						</details>
+					</div>
 				{%- endif %}
 			</span>
-			{%- if entry.fields['abstract'] %}
-			<div id="abstract_{{entry.fields['key']}}" class="abstract">
-			{{ entry.fields['abstract'] |escape }}
-			</div>
-			{%- endif %}
 		</td>
 	</tr>
+	{%- endif %}
+	{%- endfor %}
+
+</tbody>
+</table>
+
+
+<p>
+<h2> 近期工作 </h2>
+</p>
+
+<table class="table">
+<tbody>
+	{%- for entry in entries %}
+	{%- if entry.fields['featured'] %}
+	{%- else %}
+	<tr>
+		<td>
+			<span class="date">
+				<big><strong>{{ entry.fields['year'] }}</strong></big><br />
+			</span>
+		</td>
+		<td class="publication">
+			<span class="pubtitle">
+				{%- set pdf = entry.fields['pdf_path'] %}
+				{%- if pdf %}
+					<img src="img/pdf_icon.png" width="16"
+						height="16" alt="PDF" />
+					<a href="{{ url|escape }}">{{ entry|title }}</a>.
+					{%- set url = pdf %}
+				{%- else %}
+					{%- set url = entry.fields['url'] %}
+					{%- if url %}
+						<img src="img/web_icon.png" width="16"
+							height="16" alt="PDF" />
+						<a href="{{ url|escape }}">{{ entry|title }}</a>.
+					{%- else %}
+						{{ entry|title }}.
+					{%- endif %}
+				{%- endif %}
+			</span><br />
+			<span class="authors">
+				{{ entry.persons['author']|author_list }}.
+			</span><br />
+			<span class="venuetype">{{ entry|venue_type -}}</span><span class="venue">{{ entry|venue -}}</span>.
+			{%- if entry.fields['note'] %}
+			<span class="note">
+			{{ entry.fields['note']|escape }}.
+			</span>
+			{%- endif %}
+			<br />
+			<span class="links">
+			{%- for type, url in (entry|extra_urls).items() %}
+				[<a href="{{ url|escape }}">{{ type|escape }}</a>]
+			{%- endfor %}
+				{%- if entry.fields['abstract'] %}
+				  <div data-view-component="true" class="Box-footer">
+					<details data-view-component="true">
+							<summary role="button" data-view-component="true">    
+								<span data-view-component="true" class="f3 text-bold d-inline mr-3">Abstract</span>
+							</summary>
+							{%- if entry.fields['abstract'] %}
+							<div id="abstract_{{entry.fields['key']}}" class="abstract">
+							{{ entry.fields['abstract'] |escape }}
+							</div>
+							{%- endif %}
+						</details>
+					</div>
+				{%- endif %}
+			</span>
+		</td>
+	</tr>
+	{%- endif %}
 	{%- endfor %}
 </tbody>
 </table>

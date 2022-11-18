@@ -183,16 +183,21 @@ def sortBibForWebpage(orig_bib_fileName, sorted_bib_fileName):
     for bib in origBib:
         index = bib.casefold().find('featured')
         if (index != -1):
-            if (bib[bib.find('{',index)+1:bib.find('}',index)] == 'true'):
+            featured_start = bib.find('{',index)+1
+            featured_end = bib.find('}',index)
+            featured_text = bib[featured_start:featured_end]
+            if (featured_text.casefold() == 'true'):
                 order -= 1
                 yearToWrite = str(order)
+                ordered_bib = bib.replace('year','year={'+yearToWrite+'},\n  realyear')
+            else:
+                ordered_bib = bib[:index] + bib[featured_end+1:]
         else:
-            yearToWrite = bib[bib.find('{',bib.casefold().find('year'))+1:bib.find('}',bib.casefold().find('year'))]
-        ordered_bib = bib.replace('year','year={'+yearToWrite+'},\n  realyear')
-        if (bib.casefold().find('pdf_path') != -1):
-            ordered_bib = ordered_bib.replace('url','webUrl')
-            ordered_bib = ordered_bib.replace('pdf_path','url')
-        fOrderedBib.write(ordered_bib.replace('abstract','noabstract'))
+            ordered_bib = bib
+        # if (bib.casefold().find('pdf_path') != -1):
+        #     ordered_bib = ordered_bib.replace('url','webUrl')
+        #     ordered_bib = ordered_bib.replace('pdf_path','url')
+        fOrderedBib.write(ordered_bib)
     fOrderedBib.close()
 
 def extractPersonalBib(bib_name, original_bib_file, personal_bib_file):
