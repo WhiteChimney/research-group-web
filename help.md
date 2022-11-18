@@ -10,8 +10,9 @@ title: 网页配置使用指南
 
 ### 软件与模板下载
 
-1. 软件下载：*QKDLAB Bib 管理软件*（点击下载：[Windows](http://qkdlab.gaokeyan.xyz/files/QkdlabBibUpdater.exe) or [macOS](http://qkdlab.gaokeyan.xyz/files/QkdlabBibUpdater.dmg)）
-2. 本「指南」页面及示例[个人网页](https://qkdlab.gaokeyan.xyz/people/faculty_example/faculty_example.html)的 [md 原文件](http://qkdlab.gaokeyan.xyz/files/md_template.zip)，可以作为一些 Markdown 语法使用的参考。
+1. **视频教程**：[睿客网盘](https://rec.ustc.edu.cn/share/5a1d26a0-674d-11ed-b618-f96531483a4d)可直接观看
+2. 软件下载：*QKDLAB Bib 管理软件*（点击下载：[Windows](http://qkdlab.gaokeyan.xyz/files/QkdlabBibUpdater.exe) or [macOS](http://qkdlab.gaokeyan.xyz/files/QkdlabBibUpdater.dmg)）
+3. 本「指南」页面及示例[个人网页](https://qkdlab.gaokeyan.xyz/people/faculty_example/faculty_example.html)的 [md 原文件](http://qkdlab.gaokeyan.xyz/files/md_template.zip)，可以作为一些 Markdown 语法使用的参考。
 
 <br>
 
