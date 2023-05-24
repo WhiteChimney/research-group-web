@@ -10,7 +10,7 @@ _includes/pubs.html: bib/pubs.bib bib/publications.tmpl
 	$(BIBBLE) $+ > $@
 
 build: _includes/pubs.html
-	jekyll build --destination ../qkdlab_website
+	jekyll build --destination /var/www/qkdlab_website
 
 # you can configure these at the shell, e.g.:
 # SERVE_PORT=5001 make serve
@@ -24,7 +24,7 @@ clean:
 	$(RM) -r _site _includes/pubs.html
 
 DEPLOY_HOST ?= qkdlab.gaokeyan.xyz
-DEPLOY_PATH ?= qkdlab_website/
+DEPLOY_PATH ?= /var/www/qkdlab.gaokeyan.xyz/
 RSYNC := rsync --compress --recursive --checksum --itemize-changes --delete -e ssh
 
 deploy: clean build
