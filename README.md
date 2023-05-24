@@ -102,7 +102,7 @@ url={/bib/pdf/xxx.pdf},
 pip install bibble
 gem install jekyll
 ```
-* 注：macOS 下由于自带 Ruby 环境，安装最为方便。Linux 下可能需要手动安装 Ruby 及其开发环境。Windows 下由于缺少 make 工具，需要更多折腾。
+* 注：macOS 下由于自带 Ruby 环境，安装最为方便。Linux 下可能需要手动安装 Ruby 及其开发环境（e.g. [这个教程](https://www.digitalocean.com/community/tutorials/how-to-install-ruby-on-rails-with-rbenv-on-ubuntu-20-04)）。Windows 下由于缺少 make 工具，需要更多折腾。
 
 3. 整理各项内容
     * _config.yml，板块布置
